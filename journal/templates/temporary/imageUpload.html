@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf8">
+    </head>
+    <body>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Upload</button>
+        </form>
+
+        <p>Uploaded files:</p>
+          <ul>
+            {% for img in images %}
+              <li>
+                <a href="{{ img.image.url }}">{{ img.image.name }}</a>
+                <small>(Uploaded at: {{ img.uploaded_at }})</small>
+                  <br>
+              <a href="{{ img.image_thumbnail.url }}">{{ img.image_thumbnail.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+    </body>
+</html>

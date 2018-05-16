@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Videos
+{% endblock %}
+
+{%  block style %}
+    <style>
+    .container {
+  overflow: hidden;
+}
+
+.owl-carousel {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.owl-carousel .owl-item {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.owl-carousel .owl-item .item {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+.owl-carousel .owl-item .item img {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  z-index: -1;
+}
+.owl-carousel .owl-item .item video {
+      width:100%;
+}
+.owl-carousel .owl-item .item .promo-container {
+  position: absolute;
+  top: 0;
+  height: 600px;
+}
+.owl-carousel .owl-item .item .promo-container h2 {
+  color: white;
+}
+.owl-carousel .owl-item .item .promo-container .promo {
+  height: 200px;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 600px;
+  padding: 40px;
+}
+.owl-carousel .owl-nav {
+  display: none;
+}
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="section videos">
+        <div class="container">
+            <ul class="article-breadcrumb">
+                <li><a href="{% url 'index' %}">Accueil</a></li>
+                <li><a href="{% url 'video' %}">Videos</a></li>
+            </ul>
+            <div class="title">
+                <h2>
+                    Videos
+                </h2>
+            </div>
+        <div class="owl-carousel">
+            {% for video in videos %}
+                {% if video.promo == None %}
+                    <div class="item">
+                {% else %}
+                    <div class="item" data-videosrc="{{ video.promo.url }}">
+                {% endif %}
+                    <img src='{{ video.imagePrincipale.image.url }}'/>
+                    <div class='promo-container'>
+                        <div class='promo'>
+                            <h2>{{ video.titre }}</h2>
+                            <a href="#" class="btn btn-default">Watch Video</a>
+                            <a href="#" class="btn btn-default">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    $( document ).ready(function() {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            dots:false,
+            items:1
+    })
+    owl.on('translate.owl.carousel',function(e){
+        $('.owl-item video').each(function(){
+            $(this).get(0).pause();
+        });
+    });
+    owl.on('translated.owl.carousel',function(e){
+        $('.owl-item.active video').get(0).play();
+    })
+    if(!isMobile()){
+        $('.owl-item .item').each(function(){
+            var attr = $(this).attr('data-videosrc');
+            if (typeof attr !== typeof undefined && attr !== false) {
+                console.log('hit');
+                var videosrc = $(this).attr('data-videosrc');
+                $(this).prepend('<video muted><source src="'+videosrc+'" type="video/mp4"></video>');
+            }
+        });
+        $('.owl-item.active video').attr('autoplay',true).attr('loop',true);
+        }
+    });
+
+
+    function isMobile(width) {
+	    if(width == undefined){
+		    width = 719;
+	    }
+	    if(window.innerWidth <= width) {
+		    return true;
+	    } else {
+		    return false;
+	    }
+    }
+{% endblock %}

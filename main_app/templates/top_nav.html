@@ -1,0 +1,40 @@
+<div class="topnav" id="myTopnav">
+    <div class="container">
+        <a href="#home" class="f-left nav-acceuil" id=""> Acceuil</a>
+        <a href="#about" class="border-left-beige f-left nav-qa" id="">Q&A</a>
+        <a href="/journal"class="border-left-beige f-left nav-news" id="">News</a>
+        <a href="#news" class="border-left-beige f-left nav-market" id="linkMarketPlace">Market Place</a>
+        <a href="#contact" class="border-left-beige f-left .linkELearning nav-learning" id="linkELearning">E-learning</a>
+        <a href="/reseausocial/home" class="border-left-beige f-left" id="linkReseauSocial">Réseau social</a>
+        <a href="#about" class="border-left-beige f-left" id="linkAppelsOffres">Appels d'offres</a>
+        <div class="dropdowncss" id="dropdown1" >
+            <button class="dropbtn">Plus
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/reseausocial/home" class="border-left-beige f-left nav-social">Réseau social</a>
+                <a href="#about" class="border-left-beige f-left nav-offres">Appels d'offres</a>
+            </div>
+        </div>
+        <div class="dropdowncss" id="dropdown2" >
+            <button class="dropbtn">Plus
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#news" class="border-left-beige f-left nav-market">Market Place</a>
+                <a href="#contact" class="border-left-beige f-left nav-learning">E-learning</a>
+                <a href="/reseausocial/home" class="border-left-beige f-left nav-social">Réseau social</a>
+                <a href="#about" class="border-left-beige f-left nav-offres">Appels d'offres</a>
+            </div>
+        </div>
+        {% if user.is_authenticated %}
+            <a href="/main/logout" class="border-left f-right"><i class="fa fa-sign-out "></i> Se deconnecter</a>
+            <a href="#" class="f-right border-left" style="text-transform: none; color: #333; background: #f5f5dc;">Bonjour {{ user.username }}</a>
+        {% else %}
+            <a href="/main/contactus" class="border-left f-right"><i class="fa fa-envelope"></i></a>
+            <a href="/main/login" class="f-right"><i class="fa fa-sign-in"></i> Se connecter</a>
+            <a href="/main/signup" class="border-left f-right" >S'inscrire</a>
+        {% endif %}
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</div>

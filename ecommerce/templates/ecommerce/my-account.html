@@ -1,0 +1,190 @@
+{% extends 'ecommerce/base.html' %}
+{% load static %}
+{% block content %}
+<div class="main-container container">
+    <ul class="breadcrumb">
+        <li><a href="{% url 'e_commerce:index' %}">Home</a></li>
+        <li><a href="{% url 'e_commerce:my_account' %}">My Account</a></li>
+    </ul>
+
+    <div class="row">
+        <!--Middle Part Start-->
+        <div class="col-sm-9" id="content">
+            <h2 class="title">My Account</h2>
+            <p class="lead">Hello, <strong>{{ user.last_name.upper }} {{ user.first_name.capitalize }}</strong> - To update your account information.</p>
+            {% if message_error %}
+            <div class="alert alert-danger" role="alert">
+              <strong>Oh snap!</strong> {{ message_error }}
+            </div>
+            {% endif %}
+            {% if message_success and not message_error %}
+            <div id="success" class="alert alert-success" role="alert">
+              <strong>Well done!</strong> {{ message_success }}
+            </div>
+            {% endif %}
+            <form method="post" action="{% url 'e_commerce:my_account' %}">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-sm-6">
+                        <fieldset id="personal-details">
+                            <legend>Personal Details</legend>
+                            <div class="form-group required">
+                                <label for="input-firstname" class="control-label">First Name</label>
+                                <input type="text" class="form-control" id="input-firstname" placeholder="First Name" value="{{ user.first_name }}" name="first_name" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-lastname" class="control-label">Last Name</label>
+                                <input type="text" class="form-control" id="input-lastname" placeholder="Last Name" value="{{ user.last_name }}" name="last_name" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-email" class="control-label">E-Mail</label>
+                                <input type="email" class="form-control" id="input-email" placeholder="E-Mail" value="{{ user.email }}" name="email" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-telephone" class="control-label">Telephone</label>
+                                <input type="tel" class="form-control" id="input-telephone" placeholder="Telephone" value="{{ user.profil.tel }}" name="telephone" required>
+                            </div>
+                        </fieldset>
+                        <br>
+                    </div>
+                    <div class="col-sm-6">
+                        <fieldset>
+                            <legend>Change Password</legend>
+                            <div class="form-group required">
+                                <label for="input-password1" class="control-label">Old Password</label>
+                                <input type="password" class="form-control" id="input-password1" placeholder="Old Password" value="" name="old_password">
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-password" class="control-label">New Password</label>
+                                <input type="password" class="form-control" id="input-password" placeholder="New Password" value="" name="new_password">
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-confirm" class="control-label">New Password Confirm</label>
+                                <input type="password" class="form-control" id="input-confirm" placeholder="New Password Confirm" value="" name="confirm_password">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Newsletter</legend>
+                            <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-3 control-label">Subscribe</label>
+                                <div class="col-md-10 col-sm-9 col-xs-9">
+                                    <label class="radio-inline">
+                                        {% if newsletter_on %}
+                                            <input type="radio" value="1" name="newsletter" checked="checked" > Yes
+                                        {% else %}
+                                            <input type="radio" value="1" name="newsletter"> Yes
+                                        {% endif %}
+                                    </label>
+                                    <label class="radio-inline">
+                                        {% if not newsletter_on %}
+                                            <input type="radio" value="0" name="newsletter" checked="checked" > No
+                                        {% else %}
+                                            <input type="radio" value="0" name="newsletter"> No
+                                        {% endif %}
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <fieldset id="address">
+                            <legend>Payment Address</legend>
+                            <div class="form-group">
+                                <label for="input-company" class="control-label">Company</label>
+                                <input type="text" class="form-control" placeholder="Company" value="{{ user.profil.billingaddress.company }}" name="P_company">
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-address-1" class="control-label">Address</label>
+                                <input type="text" class="form-control" rows="2" id="input-address-1" placeholder="Address" value="{{ user.profil.billingaddress.address }}" name="P_address" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-city" class="control-label">City</label>
+                                <input type="text" class="form-control" placeholder="City" value="{{ user.profil.billingaddress.city }}" name="P_city" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-postcode" class="control-label">Post Code</label>
+                                <input type="text" class="form-control"  placeholder="Post Code" value="{{ user.profil.billingaddress.post_code }}" name="P_postcode" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-country" class="control-label">Country</label>
+                                <input type="text" class="form-control" id="input-country" placeholder="Country" value="{{ user.profil.billingaddress.country }}" name="P_country" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-zone" class="control-label">Region / State</label>
+                                <input type="text" class="form-control" id="input-zone" placeholder="Region / State" value="{{ user.profil.billingaddress.region }}" name="P_region" required>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-sm-6">
+                        <fieldset id="shipping-address">
+                            <legend>Shipping Address</legend>
+                            <div class="form-group">
+                                <label for="input-company" class="control-label">Company</label>
+                                <input type="text" class="form-control" id="input-company" placeholder="Company" value="{{ user.profil.shippingaddress.company }}" name="S_company">
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-address-1" class="control-label">Address</label>
+                                <input type="text" class="form-control" rows="2" id="input-address-1" placeholder="Address" value="{{ user.profil.shippingaddress.address }}" name="S_address" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-city" class="control-label">City</label>
+                                <input type="text" class="form-control" id="input-city" placeholder="City" value="{{ user.profil.shippingaddress.city }}" name="S_city" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-postcode" class="control-label">Post Code</label>
+                                <input type="text" class="form-control" id="input-city" placeholder="Post Code" value="{{ user.profil.shippingaddress.post_code }}" name="S_postcode" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-country" class="control-label">Country</label>
+                                <input type="text" class="form-control" id="input-country" placeholder="Country" value="{{ user.profil.shippingaddress.country }}" name="S_country" required>
+                            </div>
+                            <div class="form-group required">
+                                <label for="input-zone" class="control-label">Region / State</label>
+                                <input type="text" class="form-control" id="input-region" placeholder="Region" value="{{ user.profil.shippingaddress.region }}" name="S_region" required>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="buttons clearfix">
+                    <div class="pull-right">
+                        <input type="submit" class="btn btn-md btn-primary" value="Save Changes">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--Middle Part End-->
+        <!--Right Part Start -->
+        <aside class="col-sm-3 hidden-xs" id="column-right">
+            <h2 class="subtitle">Account</h2>
+            <div class="list-group">
+                <ul class="list-item">
+                    <li><a href="#">Login</a>
+                    </li>
+                    <li><a href="#">Register</a>
+                    </li>
+                    <li><a href="#">Forgotten Password</a>
+                    </li>
+                    <li><a href="{% url 'e_commerce:cart' %}">Shopping Cart</a>
+                    </li>
+                    <li><a href="{% url 'e_commerce:compare' %}">Compare List</a>
+                    </li>
+                    <li><a href="{% url 'e_commerce:wish_list' %}">Wish List</a>
+                    </li>
+                    <li><a href="#">Order History</a>
+                    </li>
+                    <li><a href="{% url 'e_commerce:checkout' %}">Checkout</a>
+                    </li>
+                    <li><a href="{% url 'e_commerce:about-us' %}">About us</a>
+                    </li>
+                    <li><a href="{% url 'e_commerce:contact-us' %}">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!--Right Part End -->
+    </div>
+</div>
+{% endblock %}

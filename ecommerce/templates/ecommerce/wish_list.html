@@ -1,0 +1,81 @@
+{% extends 'ecommerce/base.html' %}
+{% load static %}
+{% load humanize %}
+{% block content %}
+<div class="main-container container">
+    <ul class="breadcrumb">
+        <li><a href="{% url 'e_commerce:index' %}">Home</a></li>
+        <li><a href="#">My Wish List</a></li>
+    </ul>
+
+    <div class="row">
+        {% if message_error %}
+        <div class="alert alert-danger" role="alert">
+            <strong>Oh snap!</strong> {{ message_error }}
+        </div>
+        {% endif %}
+        <!--Middle Part Start-->
+        <div id="content" class="col-sm-12">
+            <h2 class="title">My Wish List</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover wishlist">
+                    <thead>
+                        <tr>
+                            <td class="text-center">Image</td>
+                            <td class="text-left">Product Name</td>
+                            <td class="text-left">Brand</td>
+                            <td class="text-right">Stock</td>
+                            <td class="text-right">Unit Price</td>
+                            <td class="text-right">Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for el in wish_list_list %}
+                        <tr>
+                            <td class="text-center">
+                                <a  href="product.html"><img width="70px" src="{{ el.el.product.image.url }}" alt="{{ el.el.product.name }}" title="{{ el.el.product.name }}">
+                                </a>
+                            </td>
+                            <td class="text-left"><a href="product.html">{{ el.el.product.name }}</a>
+                            </td>
+                            <td class="text-left">{{ el.el.product.brand.name }}</td>
+                            <td class="text-right">{{ el.stock }}</td>
+                            <td class="text-right">
+                                {% if el.sale %}
+                                <div class="price"> <span class="price-new">${{ el.sale.new_price|intcomma }}</span> <span class="price-old">${{ el.el.product.price|intcomma }}</span></div>
+                                {% else %}
+                                <div class="price"> <span class="price-new">${{ el.el.product.price|intcomma }}</span></div>
+                                {% endif %}
+                            </td>
+                            <td class="text-right">
+                                <form id="formAddCart{{ el.el.product.pk }}" method="get" action="{% url 'e_commerce:add_to_cart' %}" data-validate-url="{% url 'e_commerce:add_to_cart' %}" style="display: inline-block"><input type="hidden" name="product" value="{{ el.el.product.pk }}">
+                                </form>
+                                <button type="button" class="btn btn-primary" title="Add to cart" style="display: inline-block; margin-top: 0" data-toggle="tooltip" data-original-title="Add to Cart" onclick="cart.add('{{ el.el.product.pk }}', '{{ user.is_authenticated }}', '{{ el.el.product.name }}', '{{ el.el.product.image.url }}', '{% url 'e_commerce:product' el.el.product.pk %}');">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <!--<form action="{# url 'e_commerce:add_from_wish' #}" method="post" style="display: inline-block">
+                                    {# csrf_token #}
+                                    <input type="hidden" name="product" value="{# el.el.product.pk #}">
+                                    <button class="btn btn-primary" title="Add to cart" style="display: inline-block; margin-top: 0" data-toggle="tooltip" type="submit" data-original-title="Add to Cart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                </form>-->
+                                <form action="{% url 'e_commerce:remove_from_wish' %}" method="post" style="display: inline-block" id="formWish{{ forloop.counter }}">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="product" value="{{ el.el.product.pk }}">
+                                    <input type="hidden" name="next" value="{{ request.path }}">
+                                    <a class="btn btn-danger" title="Remove" data-toggle="tooltip" href="javascript:" onclick="document.getElementById('formWish{{ forloop.counter }}').submit();" data-original-title="Remove">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--Middle Part End-->
+    </div>
+</div>
+{% endblock %}
