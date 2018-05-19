@@ -1,6 +1,8 @@
 from django import forms
 from .models import Image, ImageNews
 
+from ckeditor.widgets import CKEditorWidget
+
 
 class ImageUploadForm(forms.ModelForm):
     class Meta:
@@ -219,13 +221,7 @@ class JournalistCreateArticle(forms.Form):
     )
 
     content = forms.CharField(
-        widget=forms.Textarea(
-            attrs={
-                'rows': '10',
-                'class': 'form-control',
-                'placeholder': 'Contenu de l\'article, vous pouvez utiliser les balises HTML'
-            }
-        )
+        widget=CKEditorWidget()
     )
     resume = forms.CharField(
         widget=forms.Textarea(
@@ -282,14 +278,9 @@ class JournalistCreateVideo(forms.Form):
     )
 
     content = forms.CharField(
-        widget=forms.Textarea(
-            attrs={
-                'rows': '10',
-                'class': 'form-control',
-                'placeholder': 'Contenu de l\'article, vous pouvez utiliser les balises HTML'
-            }
-        )
+        widget=CKEditorWidget()
     )
+
     resume = forms.CharField(
         required=False,
         widget=forms.Textarea(
@@ -302,7 +293,12 @@ class JournalistCreateVideo(forms.Form):
     )
 
     category = forms.CharField(
-        widget=forms.HiddenInput()
+        widget=forms.HiddenInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': 'Résumé de l\'article'
+            }
+        )
     )
 
     comment_enable = forms.CharField(

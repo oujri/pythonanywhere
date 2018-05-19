@@ -88,7 +88,7 @@
 						<div class="widget-tags">
 							<ul>
                                 {% for tag in tags %}
-                                    <li style="background: {{ tag.color }}"><a href="{% url 'tag' tag.name %}">{{ tag.name }}</a></li>
+                                    <li style="background: {{ tag.color }}"><a href="{% url 'tag' tag.name %}">{{ tag.name|upper }}</a></li>
                                 {% endfor %}
 							</ul>
 						</div>
@@ -298,7 +298,7 @@
 		
 		<!-- AD SECTION -->
 		<div class="visible-lg visible-md">
-			<img class="center-block" src="{% static 'journal/img/ad-3.jpg' %}" alt="">
+			<img style="margin-top: -20px;" class="center-block" src="{% static 'journal/img/ad-3.jpg' %}" alt="">
 		</div>
 		<!-- /AD SECTION -->
 		

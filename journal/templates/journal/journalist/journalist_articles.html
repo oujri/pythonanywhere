@@ -50,7 +50,7 @@
             <ul class="list-inline">
                 <li><a href="{% url 'journalist_profile' %}">Profil</a></li>
                 <li><a href="{% url 'journalist_videos' %}">Videos</a></li>
-                <li><a href="#">Signals</a></li>
+                <li><a href="{% url 'journalist_signals' %}">Signals</a></li>
                 <li><a href="{% url 'journalist_create_article' %}">Ajouter Article</a></li>
                 <li><a href="{% url 'journalist_create_video' %}">Ajouter Video</a></li>
             </ul>
@@ -115,7 +115,7 @@
                             <tr>
                                 <td>{{ article.id }}</td>
                                 <td>{{ article.small_title }}<span class="vue">{{ article.view_number }} <i class="fa fa-eye"></i></span></td>
-                                <td>{{ article.category }}</td>
+                                <td>{{ article.category.displayed_text }}</td>
                                 {% if article.comment_enable %}
                                     <td>Activés
                                         <span class="vue">Total : {{ article.comment_set.count }} <i class="fa fa-comments-o"></i></span></td>

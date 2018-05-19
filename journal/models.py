@@ -6,6 +6,8 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.utils.deconstruct import deconstructible
 
+from ckeditor.fields import RichTextField
+
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
 
@@ -77,7 +79,8 @@ class Journalist(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=20)
+    displayed_text = models.CharField(max_length=20)
     description = models.TextField(blank=True, null=True)
     color = models.CharField(max_length=30, default='#37474F')
     icon = models.CharField(max_length=30, null=True, blank=True)
@@ -99,7 +102,7 @@ class Tag(models.Model):
 class News(models.Model):
     title = models.CharField(max_length=255)
     small_title = models.CharField(null=True, blank=True, max_length=255)
-    content = models.TextField(default='null')
+    content = RichTextField(default='null')
     date_publication = models.DateTimeField(auto_now_add=True)
     view_number = models.IntegerField(default=0)
     resume = models.TextField(blank=True, null=True)
@@ -180,9 +183,17 @@ class Signal(models.Model):
 class SignalComment(Signal):
     comment = models.ForeignKey(Comment, on_delete=models.CASCADE)
 
+    @staticmethod
+    def type():
+        return 'comment'
+
 
 class SignalAnswer(Signal):
     answer = models.ForeignKey(Answer, on_delete=models.CASCADE)
+
+    @staticmethod
+    def type():
+        return 'answer'
 
 
 class Newsletter(models.Model):

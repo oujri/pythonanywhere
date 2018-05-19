@@ -1,18 +1,18 @@
 from journal.models import Category, Video, News, Comment, Journalist
 from journal.forms import NewsletterForm
-import requests
+# import requests
 
 
 def global_var(request):
-    # Meteo
-    url = 'http://api.openweathermap.org/data/2.5/weather?q=Rabat&units=metric&appid=91d3852842a30e80531df63b131af6d4'
-    r = requests.get(url).json()
-    weather = {
-        'city': 'Casablanca',
-        'temperature': r['main']['temp'],
-        'description': r['weather'][0]['description'],
-        'icon': r['weather'][0]['icon'],
-    }
+    # Weather
+    # url = 'http://api.openweathermap.org/data/2.5/weather?q=Rabat&units=metric&appid=91d3852842a30e80531df63b131af6d4'
+    # r = requests.get(url).json()
+    # weather = {
+    #    'city': 'Casablanca',
+    #    'temperature': r['main']['temp'],
+    #    'description': r['weather'][0]['description'],
+    #    'icon': r['weather'][0]['icon'],
+    # }
 
     # TOP_READ
     video_id = Video.objects.filter(active=True).values_list('id', flat=True)
@@ -30,8 +30,8 @@ def global_var(request):
             check = True
 
     context = {
-        'categories': Category.objects.all().order_by('name'),
-        'weather': weather,
+        'categories': Category.objects.all().order_by('id'),
+        # 'weather': weather,
         'topRead': top_read,
         'topComment': top_comment,
         'newsletterForm': NewsletterForm(),

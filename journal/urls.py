@@ -34,6 +34,7 @@ urlpatterns = [
     path('journalist/create_video/', views.journalist_create_video, name='journalist_create_video'),
     path('journalist/update_video/<int:video_id>/', views.journalist_update_video,
          name='journalist_update_video'),
+    path('journalist/signals/', views.journalist_signals, name='journalist_signals'),
 
     # JOURNALIST AJAX URL
     path('journalist/upload_primary_image/', views.journalist_upload_primary_image,

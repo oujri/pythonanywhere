@@ -57,7 +57,7 @@
                 <li><a href="{% url 'journalist_profile' %}">Profil</a></li>
                 <li><a href="{% url 'journalist_articles' %}">Articles</a></li>
                 <li><a href="{% url 'journalist_videos' %}">Videos</a></li>
-                <li><a href="#">Signals</a></li>
+                <li><a href="{% url 'journalist_signals' %}">Signals</a></li>
                 <li><a href="{% url 'journalist_create_video' %}">Ajouter Video</a></li>
             </ul>
         </nav>
@@ -166,6 +166,18 @@
                                             <i class="fa fa-trash-o"></i>
                                         </button>
                                     </form>
+                                    <button class="btn btn-default pull-right btn-copy" onclick="
+                                            var el = document.createElement('textarea');
+                                            el.value = '{{ photo.image.url }}';
+                                            el.setAttribute('readonly', '');
+                                            el.style.position = 'absolute';
+                                            el.style.left = '-9999px';
+                                            document.body.appendChild(el);
+                                            el.select();
+                                            document.execCommand('copy');
+                                            document.body.removeChild(el);">
+                                        <i class="fa fa-copy"></i>
+                                    </button>
                                 </td>
                             </tr>
                         {% endfor %}
@@ -192,6 +204,7 @@
 
             <!-- FORM -->
             <form action="" method="post" id="form-create-article">
+                {{ form.media }}
                 {% if form.errors %}
                     <div class="form-group">
                     <div class="alert alert-danger">

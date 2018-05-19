@@ -31,7 +31,7 @@
                 <li><a href="{% url 'journalist_profile' %}">Profil</a></li>
                 <li><a href="{% url 'journalist_articles' %}">Articles</a></li>
                 <li><a href="{% url 'journalist_videos' %}">Vidéos</a></li>
-                <li><a href="#">Signals</a></li>
+                <li><a href="{% url 'journalist_signals' %}">Signals</a></li>
                 <li><a href="{% url 'journalist_create_article' %}">Ajouter Article</a></li>
                 <li><a href="{% url 'journalist_create_video' %}">Ajouter Video</a></li>
             </ul>
@@ -58,52 +58,56 @@
                 </div>
                 <div class="col-md-5">
                     <div id="top-article">
-                        <h3>Meilleur Article</h3>
-                        <!-- TOP ARTICLE -->
-                        <article class="article widget-article">
-                            <div class="article-img">
-                                <a href="{% url 'post' top_article.category.name top_article.id %}">
-                                    <img src="{{ top_article.primary_image.image_thumbnail.url }}"
-                                         alt="{{ top_article.primary_image.description }}">
-                                </a>
-                            </div>
-                            <div class="article-body">
-                                <h4 class="article-title"><a href="{% url 'post' top_article.category.name top_article.id %}">
-                                    {{ top_article.small_title }}</a></h4>
-                                <ul class="article-meta">
-                                    <li><a href="{% url 'category' top_article.category %}" class="label">
-                                        {{ top_article.category }}</a></li>
-                                    <li><i class="fa fa-clock-o"></i> {{ top_article.date_publication }}</li>
-                                    <li><i class="fa fa-eye"></i></li> {{ top_article.view_number }}
-                                    <li><i class="fa fa-comments"></i> {{ top_article.comment_set.count }}</li>
-                                </ul>
-                            </div>
-                        </article>
-                        <!-- /ARTICLE -->
+                        {% if top_article != None %}
+                            <h3>Meilleur Article</h3>
+                            <!-- TOP ARTICLE -->
+                            <article class="article widget-article">
+                                <div class="article-img">
+                                    <a href="{% url 'post' top_article.category.name top_article.id %}">
+                                        <img src="{{ top_article.primary_image.image_thumbnail.url }}"
+                                             alt="{{ top_article.primary_image.description }}">
+                                    </a>
+                                </div>
+                                <div class="article-body">
+                                    <h4 class="article-title"><a href="{% url 'post' top_article.category.name top_article.id %}">
+                                        {{ top_article.small_title }}</a></h4>
+                                    <ul class="article-meta">
+                                        <li><a href="{% url 'category' top_article.category %}" class="label">
+                                            {{ top_article.category }}</a></li>
+                                        <li><i class="fa fa-clock-o"></i> {{ top_article.date_publication }}</li>
+                                        <li><i class="fa fa-eye"></i></li> {{ top_article.view_number }}
+                                        <li><i class="fa fa-comments"></i> {{ top_article.comment_set.count }}</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <!-- /ARTICLE -->
+                        {% endif %}
                     </div>
                     <div id="top-video">
-                        <h3>Meilleur Video</h3>
-                        <!-- TOP VIDEO -->
-                        <article class="article widget-article">
-                            <div class="article-img">
-                                <a href="{% url 'post' top_article.category.name top_article.id %}">
-                                    <img src="{{ top_video.primary_image.image_thumbnail.url }}"
-                                         alt="{{ top_video.primary_image.description }}">
-                                </a>
-                            </div>
-                            <div class="article-body">
-                                <h4 class="article-title"><a href="{% url 'post' top_video.category.name top_article.id %}">
-                                    {{ top_video.small_title }}</a></h4>
-                                <ul class="article-meta">
-                                    <li><a href="{% url 'video' %}" class="label">
-                                        videos</a></li>
-                                    <li><i class="fa fa-clock-o"></i> {{ top_video.date_publication }}</li>
-                                    <li><i class="fa fa-eye"></i></li> {{ top_video.view_number }}
-                                    <li><i class="fa fa-comments"></i> {{ top_video.comment_set.count }}</li>
-                                </ul>
-                            </div>
-                        </article>
-                        <!-- /VIDEO -->
+                        {% if top_video != None %}
+                            <h3>Meilleur Video</h3>
+                            <!-- TOP VIDEO -->
+                            <article class="article widget-article">
+                                <div class="article-img">
+                                    <a href="{% url 'post' top_video.category.name top_video.id %}">
+                                        <img src="{{ top_video.primary_image.image_thumbnail.url }}"
+                                             alt="{{ top_video.primary_image.description }}">
+                                    </a>
+                                </div>
+                                <div class="article-body">
+                                    <h4 class="article-title"><a href="{% url 'post' top_video.category.name top_article.id %}">
+                                        {{ top_video.small_title }}</a></h4>
+                                    <ul class="article-meta">
+                                        <li><a href="{% url 'video' %}" class="label">
+                                            videos</a></li>
+                                        <li><i class="fa fa-clock-o"></i> {{ top_video.date_publication }}</li>
+                                        <li><i class="fa fa-eye"></i></li> {{ top_video.view_number }}
+                                        <li><i class="fa fa-comments"></i> {{ top_video.comment_set.count }}</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <!-- /VIDEO -->
+                        {% endif %}
                     </div>
                 </div>
             </div>

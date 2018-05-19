@@ -45,6 +45,7 @@
 #primary_image_url {
     margin-top: 2px;
     text-align: center;
+    overflow: hidden;
 }
 
 #primary_image_url a {
@@ -103,6 +104,12 @@
     padding: 0 10px;
 }
 
+.btn-copy {
+    padding: 0px 10px;
+    margin-right: 2px;
+    margin-top: 1px;
+}
+
 .modal-body {
     padding: 15px 0;
 }
@@ -138,6 +145,10 @@
 .modal-footer button:hover {
     padding-right: 30px;
     padding-left: 30px;
+}
+
+.cke_chrome {
+    width: 100% !important;
 }
 
 

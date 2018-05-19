@@ -81,6 +81,15 @@ h4 {
     border-top: 1px solid #CCC5B9;
 }
 
+.table tbody tr td:nth-child(2) a {
+    color: #ef233c;
+    transition: .3s all;
+}
+
+.table tbody tr td:nth-child(2) a:hover {
+    color: #333;
+}
+
 .table tbody tr td span {
     background: #333;
     color: #FFF;

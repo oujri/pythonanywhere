@@ -1,5 +1,6 @@
 Django
 requests
 Pillow
-imagekit
+django-imagekit
 psycopg2
+django-widget-tweaks

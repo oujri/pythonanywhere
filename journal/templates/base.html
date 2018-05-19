@@ -54,11 +54,12 @@
 				<div class="container">
 					<div class="header-links">
 						<ul>
+                            <!--
                             <li class="weather">
                                 <span><img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Image"></span>
                                 <span>{{ weather.temperature }} <sup>°C</sup></span>
                                 <span>{{ weather.city }}</span>
-                            </li>
+                            </li>-->
                             <li><span id="currentDate"></span></li>
                             {% if is_journalist %}
                                 <li><a id="journalist-space" href="{% url 'journalist' %}">Espace Journalistes</a></li>
@@ -95,7 +96,7 @@
 			<div id="center-header">
 				<div class="container">
 					<div class="header-logo">
-						<a href="{% url 'index' %}" class="logo"><img src="{% static 'journal/img/logo-header.gif' %}" alt=""></a>
+						<a href="{% url 'index' %}" class="logo"><img style="width: 210px" src="{% static 'journal/img/logo.png' %}" alt=""></a>
 					</div>
 					<div class="header-ads">
 						<img class="center-block" src="{% static 'journal/img/ad-2.jpg' %}" alt="">
@@ -110,7 +111,7 @@
 					<nav id="main-nav">
 						<ul class="main-nav nav navbar-nav">
                             {% for cat in categories %}
-							    <li id="nav{{ cat.name }}"><a href="{% url 'category' cat.name %}">{{ cat.name }}</a></li>
+							    <li id="nav{{ cat.name }}"><a href="{% url 'category' cat.name %}">{{ cat.displayed_text }}</a></li>
                             {% endfor %}
                             <li id="navvideo"><a href="{% url 'video' %}">Videos</a></li>
 						</ul>
@@ -155,7 +156,7 @@
 							<!-- footer about -->
 							<div class="footer-widget about-widget">
 								<div class="footer-logo">
-									<a href="#" class="logo"><img src="{% static 'journal/img/logo-footer.png' %}" alt=""></a>
+									<a href="#" class="logo" style="width: 175px"><img src="{% static 'journal/img/logo.png' %}" alt=""></a>
 									<p>Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui.</p>
 								</div>
 							</div>

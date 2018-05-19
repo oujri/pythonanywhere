@@ -260,7 +260,7 @@ textarea.input {
     -moz-box-shadow: 0 4px 4px rgba(224,224,224 ,.7);
     box-shadow: 0 4px 4px rgba(224,224,224 ,.7);
 	opacity: 1;
-    z-index: 1;
+    z-index: 999;
 }
 
 #nav-header.fixed {
@@ -734,9 +734,14 @@ textarea.input {
 }
 
 #content_article img {
-	max-width: 80%;
+	max-width: 90%;
     display: block;
     margin: auto;
+}
+
+.section-news .col-md-6 .article .article-img img{
+	height: 240px;
+	max-height: 240px;
 }
 
 /*------------------------------------*\

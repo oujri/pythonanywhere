@@ -61,7 +61,9 @@
 							<ul class="tab-nav pull-right">
 								<li class="active"><a data-toggle="tab" href="#tabAll">All</a></li>
                                 {% for cat in categories %}
-							        <li><a data-toggle="tab" href="#{{ cat.tab_home }}">{{ cat.name }}</a></li>
+                                    {% if cat.name != 'actualites' %}
+							            <li><a data-toggle="tab" href="#{{ cat.tab_home }}">{{ cat.displayed_text }}</a></li>
+                                    {% endif %}
                                 {% endfor %}
 							</ul>
 							<!-- /tab nav -->
@@ -137,8 +139,8 @@
 							</div>
                             <!-- /tabAll -->
                             <!-- tab Sports -->
-                            <div id="tabSp" class="tab-pane fade in">
-                                {% for t in tsports %}
+                            <div id="t1" class="tab-pane fade in">
+                                {% for t in t1 %}
                                     <!-- Column {{ forloop.counter }} -->
                                     {% if forloop.counter == 1 or forloop.counter == 5 %}
                                         <div class="row">
@@ -173,8 +175,8 @@
 							</div>
 							<!-- /tab Sports -->
                             <!-- tab Technologie -->
-                            <div id="tabTec" class="tab-pane fade in">
-                                {% for t in ttec %}
+                            <div id="t2" class="tab-pane fade in">
+                                {% for t in t2 %}
                                     <!-- Column{{ forloop.counter }} -->
                                     {% if forloop.counter == 1 or forloop.counter == 5 %}
                                         <div class="row">
@@ -209,8 +211,8 @@
 							</div>
 							<!-- /tab Technologie -->
                             <!-- tab Style de vie -->
-                            <div id="tabSV" class="tab-pane fade in">
-                                {% for t in tstyledevie %}
+                            <div id="t3" class="tab-pane fade in">
+                                {% for t in t3 %}
                                     <!-- Column{{ forloop.counter }} -->
                                     {% if forloop.counter == 1 or forloop.counter == 5 %}
                                         <div class="row">
@@ -244,8 +246,8 @@
 							</div>
 							<!-- /tab Style de vie -->
                             <!-- tab Economie -->
-                            <div id="tabEco" class="tab-pane fade in">
-                                {% for t in teco %}
+                            <div id="t4" class="tab-pane fade in">
+                                {% for t in t4 %}
                                     <!-- Column{{ forloop.counter }} -->
                                     {% if forloop.counter == 1 or forloop.counter == 5 %}
                                         <div class="row">
@@ -279,8 +281,8 @@
 							</div>
 							<!-- /tab Economie -->
                             <!-- tab Internationnal -->
-                            <div id="tabInter" class="tab-pane fade in">
-                                {% for t in tinter %}
+                            <div id="t5" class="tab-pane fade in">
+                                {% for t in t5 %}
                                     <!-- Column{{ forloop.counter }} -->
                                     {% if forloop.counter == 1 or forloop.counter == 5 %}
                                         <div class="row">
@@ -339,7 +341,7 @@
 							<div class="col-md-6 col-sm-6">
 								<!-- section title -->
 								<div class="section-title">
-									<h2 class="title">Internationnal</h2>
+									<h2 class="title">BTP Maroc</h2>
 								</div>
 								<!-- /section title -->
 
@@ -396,7 +398,7 @@
 							<div class="col-md-6 col-sm-6">
 								<!-- section title -->
 								<div class="section-title">
-									<h2 class="title">Economie</h2>
+									<h2 class="title">BTP International</h2>
 								</div>
 								<!-- /section title -->
 
@@ -451,11 +453,11 @@
 						<!-- /row -->
 
                         <!-- Section News -->
-                        <div class="row">
+                        <div class="row section-news">
 							<!-- section title -->
 							<div class="col-md-12">
 								<div class="section-title">
-									<h2 class="title">News</h2>
+									<h2 class="title">Grand Projet</h2>
 								</div>
 							</div>
                         {% for n in lastNews %}
@@ -538,7 +540,7 @@
 		<!-- /SECTION LAST ADD -->
 
 		<!-- AD SECTION -->
-		<div class="visible-lg visible-md">
+		<div class="visible-lg visible-md" style="margin-top: -20px;">
 			<img class="center-block" src="{% static 'journal/img/ad-3.jpg' %}" alt="">
 		</div>
 		<!-- /AD SECTION -->

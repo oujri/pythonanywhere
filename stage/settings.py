@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'imagekit',
     'main_app',
     'ecommerce',
+    'ckeditor',
     'widget_tweaks',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -140,8 +141,6 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'journal/uploads')
-MEDIA_URL2 = '/uploads/ecommerce/'
-MEDIA_ROOT2 = os.path.join(BASE_DIR, 'ecommerce/uploads/ecommerce')
 
 # Email Configuration
 EMAIL_USE_TLS = True
