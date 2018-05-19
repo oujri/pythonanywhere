@@ -34,6 +34,9 @@ def index(request):
     cat = Category.objects.get(id=1)
     new_car = News.objects.all().exclude(id__in=video_id).filter(active=True, category=cat).order_by('-id')[:5]
 
+    # TRENDING NOW
+    trending_now = News.objects.all().exclude(id__in=video_id).filter(active=True, category=cat).order_by('-id')[:10]
+
     # TRENDING : Get last week post ordering by view number and id
     # one_week_ago = datetime.today() - timedelta(days=7)
     one_week_ago = datetime.today() - timedelta(days=90)
@@ -95,6 +98,7 @@ def index(request):
 
     context = {
         'newscar': new_car,
+        'trending_now': trending_now,
         'tendance': trending,
         't1': t1,
         't2': t2,
@@ -145,6 +149,12 @@ def upload(request):
 
 # ## SELECTED ARTICLE SHOW PAGE ## #
 def article_show(request, category_name, post):
+
+    # TRENDING NOW
+    video_id = Video.objects.all().values_list('id', flat=True)
+    cat = Category.objects.get(id=1)
+    trending_now = News.objects.all().exclude(id__in=video_id).filter(active=True, category=cat).order_by('-id')[:10]
+
     # GET INFORMATION
     article = get_object_or_404(News, id=post)
     if article.active is False:
@@ -192,7 +202,8 @@ def article_show(request, category_name, post):
         'reply_form': reply_form,
         'more_article': more_article,
         'navActive': '#nav' + article.category.name,
-        'self_article': self_article
+        'self_article': self_article,
+        'trending_now': trending_now
     }
     return render(request, 'journal/post.html', context)
 

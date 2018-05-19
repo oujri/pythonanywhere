@@ -1,6 +1,4 @@
 /*
-Template Name:  News & Magazine Template
-Author: yaminncco
 
 Colors:
 	Body 		: #2C2C2C
@@ -11,26 +9,8 @@ Colors:
 
 Fonts: Open Sans Lato
 
-Table OF Contents
-------------------------------------
-1 > General
-2 > Header
-3 > Section
-4 > Article
-5 > Widget
-6 > Article Post
-7 > Footer
-8 > Owl Theme
-9 > Responsive
-10 > Back to Top
-------------------------------------*/
+*/
 
-/*=========================================================
-	GENERAL
-===========================================================*/
-/*----------------------------*\
-	typography
-\*----------------------------*/
 body {
 	font-family: 'Lato', sans-serif;
 	color:#2C2C2C;
@@ -202,26 +182,69 @@ textarea.input {
 	color:#ff0000;
 }
 
-.trendingNow .container div {
-    display: inline;
-}
-
 .trendingNow {
     padding-bottom: 25px;
+}
+
+.trendingNow .col-md-2, .trendingNow .col-md-10 {
+	padding: 0;
+}
+
+.trendingNow .col-md-10 {
+	padding-right: 30px;
+}
+
+.trendingNow .carousel-control {
+	background: none;
+	width: 10px;
+    height: 6.5px;
+    color: #000;
+    opacity: 1;
+}
+
+
+.trendingNow #carousel-trending .carousel-trending-a {
+	position: absolute;
+	background: #FFF;
+    top: 0;
+    border: 1px solid;
+    padding: 2.5px 4px;
+	color: #757575;
+    transition: .3s all;
+}
+
+.trendingNow #carousel-trending #carousel-trending-prev {
+    right: 27px;
+}
+
+.trendingNow #carousel-trending #carousel-trending-next {
+    right: 0;
+}
+
+.trendingNow #carousel-trending .carousel-trending-a:hover {
+    background: #EF233C;
+	color: #FFF;
+}
+
+.trendingNow .carousel-inner>.item {
+	padding: 4px 24px;
+}
+
+.trendingNow .carousel {
+	max-height: 28px;
+    overflow: hidden;
 }
 
 .trendingNow .container .title {
     color: #FFF;
     background: #212121;
-    padding: 5px 10px;
+    padding: 5px 28px;
     font-size: 13px;
     text-transform: uppercase;
     margin-left: 30px;
+	font-weight: 500;
 }
 
-.trendingNow .container .news {
-    padding-left: 20px;
-}
 
 /*----------------------------*\
 	Center Header

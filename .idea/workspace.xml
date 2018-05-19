@@ -2,487 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20d61313-2cba-4c4f-9f05-b08232737cfa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/datadump.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/context_processors.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/context_processors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist-articles.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist-articles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist_create_article.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist_create_article.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/static/journal/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/img/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/img/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/img/ad-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/img/ad-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/img/ad-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/img/ad-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/img/ad.gif" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/img/ad.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/img/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/js/journalist/article_create.js" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/js/journalist/article_create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/templates/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist-profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_add_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_add_article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_add_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_add_video.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_articles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_update_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_update_article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_update_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_update_video.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_videos.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_videos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/templates/journal/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/17766123/1a6b4a32571bb68e440a18ac605e191a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/12208752_1006178659425509_855604824024584534_n/d6924b708e0be8b27a9e45d1f4fbd46f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/12208752_1006178659425509_855604824024584534_n/db93bc053ad61d80f79dd3fee2d4c09c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/01/McDonalds_276bac5ea2/51de0f5c1c52b227df4dee68ab40fbbf.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/01/McDonalds_276bac5ea2/b516460cee421b85c1580648213dd73f.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/01/Moroccan-Markets-101042-800x533_2761c898ab/3a9fb7fb544dc864f0270abdb221febb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/01/Moroccan-Markets-101042-800x533_2761c898ab/f829412df244595b2dde7ae1afdd824f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/01/maxresdefault_aeb8736e07/2aa10ccdd7d07167c4e131940991439c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/01/maxresdefault_aeb8736e07/5426553ae6dedf3204fb035c2ed3f81f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/10/17766123_00e5dc3a06/6159aa7f3a57a8698f342e78fc37f9bc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/10/17766123_00e5dc3a06/c71ae21c94c9c2d427a402dd0e38914c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/10/17766123_68c2cc6853/2f642e1d30e0a9ccfe9cdf33e87bdd86.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/10/17766123_68c2cc6853/b0020626aea396a74db7c04f5f81c98d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/10/anass_4a5c64f373/cb722886723cbc68158fb7fb3c9df595.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/10/anass_4a5c64f373/ec1855e2f244bb2543ff04f1f8eebd96.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/10/anass_8b3a7c71a9/3f7f1d750caababe87ee122c78fa7b03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/10/anass_8b3a7c71a9/b35b25984ca2d1ea8b7f8ca4abd03761.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/11/Good-Will-Hunting_b07658aaa5/41c1b5c929f1738f1b24a53ea70c74c3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/11/Perfect-Strangers_4fe86164ae/f69ee37f58ee22b968d5ddafd89b3bf3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/11/anass_ddaaee22fe/0e0fdae1d9e8f982c7ed8f26b8655049.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/11/anass_ddaaee22fe/91b3dfe526c0bdfa1fd9860f48400349.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/11/the-dark-knight_12d0503659/85b347aa4c642d5724e07821bec4bd37.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/11/the-dark-knight_8706b940c5/bd96c861de9a1c63e36384ecbb80f6ce.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/11/the-dark-knight_b135fe4add/eefea9b0e8cd3eae3738e38f0ee9f742.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/12/3ff2a021630bf1aad92ce004f160489f_2764b12978/08cb10a37796fc043e0f231662e724ca.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/12/Akhannouch_c386c11b98/3ef29d6a59969ded522ed7a119cc9615.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/12/Gon_cries_-_131_d8ef87a2fc/a2abd27f45211f5c9a9a8b769fffa63f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/12/Good-Will-Hunting_72419645f9/e0654886e95708bcffc3c9aede893455.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/12/NM-Cherry-Blossom_081607ae45/8526fd767799288539fae0ddad4be2d5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/12/cherry-blossom_12b2b9b5ee/4f1cd95e1bc3210eb6bc396af47dd453.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/12/cherry-blossom_5e030ddf22/84c9f19091649b6996d3edd1d3e85f44.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/12/maxresdefault_54255956c1/dd6f3bf886626b96335d15eb0c5d65c2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/13/17766123_c4ceeaaa43/5fed8d3c64a414ba336e7856629aef7a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/13/Akhannouch_cfa33bbb20/be071213c247b9c9248ceae0ae65b6a0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/13/Capture_4c16784230/b1b821ea58b18d6325a28f1e8119c288.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/13/Capture_b341df76be/924868478b293296f61a15daf738da4c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/13/NM-Cherry-Blossom_80323a8ab6/8037fd78ebd7e9a71a0101504587a1ed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/13/NM-Cherry-Blossom_85b83b5acb/78f57bb738624c42e6480d3c95e8228e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/13/center_8057934115/a6c6f90d62c2ea43d2611dd0cdefc603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/13/git_15d755c564/dc60dcd2cfa6be6a0f8bb071eb955a9a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/13/git_d3a92b77eb/d6db9dad102335cea22329ba2b51c787.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/14/El-Otmani-Akhannouch_6bc3703bf6/7b9baa5f1d9b4000e2f87b7834ee840e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/14/maxresdefault_3ff70231a3/1682c5f0247e8797de8e63e7ea00109b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/14/maxresdefault_99b1268d59/2ef91a36dc986ef8517edef5f1752af9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/14/maxresdefault_e167140487/c9e1613eac423e5feb3b04c485e17c34.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_1fb7b16917/d47b031fc2aaf6ca253ad237d0157787.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_1fb7b16917/e6debf00beb9bc5d31affee796ff6b25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_2eefe0b18a/1dc057e7806b14d5cf9a160fa07d2e4b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_2eefe0b18a/2870b06a3fe879830c187b50e10cb0b6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_4b0c416921/c3aac791ece5d38407f1353287d85ee2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_64fd6c6d00/c0935ca6caff7a2c0f74c01f1f11f418.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_8b5196af7f/583d28e19fe7c3a22da5792461186f75.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_8b5196af7f/76efcc2d963615fa7c0f12e51294a3b4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_9036473658/8d50dc55bb5187716d4c320fc4a79c1f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_96b1591f32/045b86e3c54fa0a8d235b150571c74fd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/Cover-lboulevard_96b1591f32/7a899e6ec5486c440c9885dca707085b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/2018/05/15/saad_eddine_othmani_pjd-8_e6451d49d9/afb6a625e6ecfac10af39259eb5698a5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/maxresdefault-11/1a94811f69d08f1ce1dde9a43dab667e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/maxresdefault-11/d32f6562ab352f1dc45dfc2fc3117680.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/maxresdefault-14/55034937024b264dc625586d52e42951.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/maxresdefault-14/c7497dadbfe9bc5187879b57b7abcd36.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/images/maxresdefault-18/946dc2a1a248e18733550f487dadd5fc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/journal/uploads/images/profileicon/304bc31e92c78590bf158f57379897db.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/000_1429wb/56f15f2e4ed6181cba75c6d163164f82.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/000_1429wb/75ceabc896b008abb238bd04468f4061.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/000_1429wb/f5345cd08f73d81f7a715ccbb7775df0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/090418-facebook-cambridge-m/02e9780b83f8731d6fd00a5bf39d1770.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/090418-facebook-cambridge-m/5d989d32fb77ebed5a59bebaa0934585.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/090418-facebook-cambridge-m/5e2ec77bf9300db6d2b5d7ff4db63d41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/090418-facebook-cambridge-m/fd489a1795cebc447bdb201844eed3b9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/30738729_1665409056839433_4150671732182614016_n/0d5c832fabdc887b0e1a59927abd9442.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/30738729_1665409056839433_4150671732182614016_n/ba6fae497783410ecde44a51c05d1c5f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/60/65b2ec89de45e5a4e0a8a4feee8b0cb9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/60/8b1aa477eb904ae5c6d20cb4849f15f3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/60/e42118e75cd936b5561e4515285efcec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/61/0b94f94ecb22694076984137ce11be3f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/61/4b84405a5b71a8c61a3eae79a93f5f4c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/61/fa01efbc7329f4871ddfeaf15ef9fe94.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/62/0291516300cd13cbffe5668631d1d5a5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/62/3d6be6d15c28eb64ecc77e0d805638a8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/62/9df7e5503da3eb1cdb8d3402c739dd05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/6adb6ebbb0d48a2be94f227f85c48cbff7481d15/348ead9daf1b7c9de9dbea0b1a02fe70.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/6adb6ebbb0d48a2be94f227f85c48cbff7481d15/43e5dc5a2bb52083ad32387070290f15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/6adb6ebbb0d48a2be94f227f85c48cbff7481d15/fab8ceb4f70efd8e04758a03bddf301b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/8549213a769d2900c2bc075f46a948a7699a3048/04e5380185b10b630db5d1acf5cc3d59.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/8549213a769d2900c2bc075f46a948a7699a3048/d91ee415f7ee00d235fdafeb69ced2a7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/8549213a769d2900c2bc075f46a948a7699a3048/eec65ff6c34ee3eb07c6b51efe9c5e16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/943a1fc069992a743d8d9caa9b36decf90bc1178/4bcbb350bec984155844a990a00768ed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/943a1fc069992a743d8d9caa9b36decf90bc1178/8b20cefe9610a0addf3be94903cf07b5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/943a1fc069992a743d8d9caa9b36decf90bc1178/bbce3cc32c6412fb572916dae3942c95.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/_100341863_gettyimages-916050890/b6c2d2cf4a0685de9a192ca6acc0f0f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/_100341863_gettyimages-916050890/ffff1e016b40899dbd1a73e44335e550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/_100972004_gettyimages-842418008/0cae4948600ecf67220c58fed69af9bb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/_100972004_gettyimages-842418008/1cc29e65382a5e99536fce9a12ddbe21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/airbnb-1084x52900/55427377428ad270f7b6a1b7431ebf12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/airbnb-1084x52900/588cd0986d824f44d4b360b462866101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/banque_mondiale/8bc7c9cdbb570c93e94e725b2e65bdef.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/bc22cf0e6708c1c07f8f09545250eec7204b2b84/b2007e3aaff4bca462e1b9d97c3f4c1a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/bc22cf0e6708c1c07f8f09545250eec7204b2b84/d94b6c4a3d6eec347c526b3090d8c5d9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/bc22cf0e6708c1c07f8f09545250eec7204b2b84/eddf9426488eb061c107187b33f615f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/bmce/32c2014de2d3da782e5fc511627f8155.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/casablanca_twin_center_morocco_ricardo_bofill_taller_arquitectura_03/c1f1cd56b8a2999bdfbb275b0c6c2929.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/casablanca_twin_center_morocco_ricardo_bofill_taller_arquitectura_03/cc040aca728aff40c8e8321379f0f0c8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/cerf_volant_palestine/8f25f5ac3cba420eb99e8bc962a16232.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/corruption/87eaee1480eee92325e5f08a9989fee5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/crop.php/ce5d2b623f75ba40875a4c34b8dd5229.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/crop.php_q2bkDrw/02ec2f14341fcbe1dc3008e91799cd9c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/crop.php_q2bkDrw/d988109f5420d83f676b6472da94908c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/cyberattack-170418/2ab01a8142f565ba1ce1d60240e14d19.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/cyberattack-170418/2bad520a63d21f15a89617ee1e47a6a8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/cyberattack-170418/fcd7e1cd0afa1466c4a6eab5fcc4d7ef.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/dims/14d0edbda2260c714acd7ef2547adb41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/dims/1585c88ee3d11b5757c02d4aace3d8b0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/dims/1e47b4ce3ce4099505e70ea4f9b3725e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/facebook-nouveaux-parametres/12a791396de6cb8b319c9fe62ed6c92f.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/facebook-nouveaux-parametres/3a6591b85309b01ea86c07ec0f061375.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/facebook-nouveaux-parametres/9231c827bb7033da2988be3350249c94.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/facebook-nouveaux-parametres/ab4235d26c2482f25eeacbf0e246151f.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/football-tirage-demi-finales-c1-ligue-champions-bayern-real-madrid-liverpool-roma/7197290cad3ae4f8479622fca606198b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/football-tirage-demi-finales-c1-ligue-champions-bayern-real-madrid-liverpool-roma/a36211176d28301936a7d0668bcacba4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/football-tirage-demi-finales-c1-ligue-champions-bayern-real-madrid-liverpool-roma/eb070bc6498ae84be1bac730c8ca6414.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/imam_salafiste_marseille/6539ca06d2b1c5bf418e6c774c2c13b9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle4/3c3fdbdf54d25fa16514240e89734f39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle4/c5af21bb678912ecda3f25bb78f5c88e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle4/d1e54bc23aae4bcc0e51740a64b138cf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle5/4ff415e5f10acbacd894d11542f2edde.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle5/91563c435f4e308969d7564b4fcd8069.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle5/bf396beffac2f3f62ff9fafbe59e0e11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle5/dbaf1d8b7f96e2bc07c206c093d2b8fc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle6/12c1192898ba674faea248ac551edb03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle6/62388e0dc1029b6d7d22c087f2014ede.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle6/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle6/d4354a1b60e1520a687700d901a52886.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle7/4674aa584b6344f99fce66acdd3d52e2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle7/5584f00e5cebbbff27748bb75c287b8f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle7/9305d05b0202ba438e3db22fff537295.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle8/2dffa2c5fe98bb4d50b87bb1e2dc817b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle8/90a7fd821ec7a1aa4f8068c3027c4cc2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/lifestyle8/d5b7a01e175b8124c43a99e9caa7247a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main1/0b160e591026c900edb4b47469126da0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main1/2ae6474fffd04df39304ef7e4a804829.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main1/393073869b13b3cf86cb1a23844fa386.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main1/777b8c0846d41699e024cc54aec50923.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main1/85181406ee1958702eb63ad2b8cba190.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main2/23c2cb4c0e88e08e671692a2e3ae4d13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main2/2ade65cfac524ad07127618a7e0188f6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main2/67b458c32ac066ebdd3e7c8d2a131ee7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main2/e67704685e0d35d4d1184ab853312a7c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main2/fbe3113d94e108bdb6447606e23dfd8d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main3/01cd6bc87c4bbe14c95140a0233b9581.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main3/1f362633f40829c31ce81d8c35392e54.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main3/1f8ef2b8d1097df55374aafbec2e2fd4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main3/b807e000e5e73dfd9fabb170299c2d41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main3/dd79f6348adf682537fce42178fc90dc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main_kissoro_masseka/731ebe9173215a8839797e51e1f27023.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main_kissoro_masseka/9bc42072a952a9ca5649d6c1564d5f7a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/main_kissoro_masseka/e69c911a913ce2f28317baa0a8bfd5b0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/manchester_city/4eef3c9f54ee81789261f30ae2f19b9a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/manchester_city/52c7eaa193537d1c24b17ae1e667adbf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/manchester_city/6a99dbd74356a8867407b02b7b7ce16d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/maxresdefault/0dc0fbb892c36c095d40709d91aebf17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/maxresdefault/8385b521625289626834c79b78d98e06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/migrants-algerie_1.jpg/05c7f925ae10081d1e4db1c8ebdb8108.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/moisson-champ-16-2016-gace-france_0_1398_931/2de3577dab339b80c976452fec6b75cf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/mugabe-grace/aed8a03781d28ec1ce577cfdbb0d582b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/nintchdbpict000289110538/c57dd70a0ee858a1bccd1db3ae16b992.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/nintchdbpict000289110538/cd5e2b441ffae308dca0e6afc2ac66f6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/noueuse/5dd7a38377fb1fe7544bda8d35b678ad.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/ob_4b94cb_32862592853-4575c58f25-o/2021ed963d2077f41eb2023146ce9d7f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/ob_4b94cb_32862592853-4575c58f25-o/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/ob_4b94cb_32862592853-4575c58f25-o/cf711f78973e3e814451c7ae0dfe92a5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/photos-usine-tanger_1/0a82a41ffccfeda66659dc674e349ce2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/photos-usine-tanger_1/1a14fda08f7aaa0462cf1996660a1062.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/pierre-broissand-amomentofstillness2-hd/3ffc5241091ae26c449ce34cc7cec584.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/pierre-broissand-amomentofstillness2-hd/be1d95810cba34dbb6ea3825658f19ac.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/pierre-broissand-amomentofstillness2-hd/ff5468e5127356e4b08612699f1724c0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/policiers_arabie_2/2611992f920bb4fc1b0ebe7352a100c3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/psg_20/8bb897ce3363112434545b0562dfda2a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/psg_20/e3e849a1c8385b388801dcef9f30b2e0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/psg_20/f62f7584111af88e2c1424fc3aa325d8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/rsz_000_m93le/d03e5a7ef102fca26cdafd88a1664c5e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/rsz_000_m93le/e358af20714e897af6da8278951e68db.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/rsz_000_m93le/f0e1d4464ee751748d727e7cdd81020a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/siam_2018/de72de34314067ba5d60f6a5f2270e67.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/strikes_france_sncf/051cba03dcfa1c44b68b913f0aabdf5d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/strikes_france_sncf/0ee448ab94796dd08177c00822623468.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/strikes_france_sncf/ed94d75ea334550fb7e163420a01326b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/subsahariens-agresses/b444b157e945fd6dedab7ca7ea04c0a9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/ue__0/14426eec907942d3b06c9059578678f6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/ue__0/98fe0446522bad2f27d64d3cd395d4f9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/verne-troyer-austin-powers-actor-dead-at-49/624f5304877e438f422f28cc26b9da90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/verne-troyer-austin-powers-actor-dead-at-49/82dcc6095b613b6afd26e7e389057821.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/vieille_bombe_allemagne/450c9a93f1a6b078d8f45925de960c4a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/CACHE/images/uploads/images/vieille_bombe_allemagne/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/12208752_1006178659425509_855604824024584534_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/01/McDonalds_276bac5ea2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/01/Moroccan-Markets-101042-800x533_2761c898ab.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/01/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/01/maxresdefault_aeb8736e07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/03/immobilier_010f166240.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/03/multimedia_690c8a54bc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/03/vetements_c7fe574855.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Bois_1_053ec3c548_dd19244c9a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Bois_2_a065730867_be084cbaeb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Ctommy_1_e5c7eeebf4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Ctommy_2_65eba8e520.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Fer_1_363bb402dc_fb47c8e53d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Fer_2_14e12547c8_ce0f705d43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Galaxytab3_1_b57c2ffb9d_a8287c7106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Galaxytab3_2_1a1134c4b4_5f5cc66308.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Molten_1_47e92ac2fe_4acb3b0481.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Molten_2_a44212b9f6_252b57665a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Nike_1_7b3065e0df_13d1539b99.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Nike_2_86ebb0c01e_a66414607f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/OLA_1_17902edc3b_d61ddebe5b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/OLA_2_a447b46864_544653031d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/OLA_3_55d2d9e09b_648180d0b7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Sport_c4636b4661_e769808ed2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/Vehicules_d524712c38.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/aluminium_1_465841dc43_060c567ac7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/aluminium_2_dbc133169b_5d837c6453.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/cat_1_cc613e49fb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/cat_2_c9f1b3beee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/cobra_1_98392008de_4a46b7dc0a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/cobra_2_bdc8ba3d53_6363cc8f2e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/construction_1c59d296da_767b849477.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/dettol_1_9f7501dcc6_7d66201734.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/dore_1_3402c3c3af_a67117f4a3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/dore_2_31dd321d09_df771227dd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/dore_3_43ae2688d0_8b6b98984c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/galaxyS9Front_9224a85e0e_c474e3b8af.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/iPhoneX_2_0598192b14_ad8cc2b7e6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/immobilier_010f166240_2816d60f14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/multimedia_690c8a54bc_211f851cb7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/parapharmacie_cc8389dd87_3a9035cdc2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/sanscou_1_215a7d5686_cf6354225e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/sanscou_2_a3edca7739_f970ccd88d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/tente_1_3d3663bd1d_4f428931fc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/tente_2_076b2ad675_5b50f7943a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/ultra_1_ebd92f907f_538fb69b25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/ultra_2_1e9b9de680_893a98b61a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/under_1_456024a828_bc543f431a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/under_2_74b509c596_9960846128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/under_3_6e4cdf0800_3a3d6b2b31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/04/vetements_c7fe574855_7620f8f433.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/05/Santafe_1_def4b5d5ce.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/05/Santafe_2_4c8e430c9c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/05/Santafe_3_c796a0bbf6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/05/food_98eb365475.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/05/toys_6d9df4120e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/BMW_7d61ddb4cf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/CAT_5d5e9989bf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/Decathlon_ebc76a23ad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/Dell_e06462d857.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/Dettol_9e29d4205f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/Hyundai_9df58c8e16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/Jules_5fa6625027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/Kitea_0d506c64f4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/LcWaikiki_9a26f13736.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/Nike_3c00ef02b7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/UnderArmor_b0c71328c8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/apple_ada4383712.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/apple_fec2d5b874.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/garnier_e109f34f9b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/molten_a72890aae8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/06/samsung_3c4cc82ef3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/10/17766123_00e5dc3a06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/10/17766123_68c2cc6853.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/10/anass_4a5c64f373.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/10/anass_8b3a7c71a9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/11/Good-Will-Hunting_b07658aaa5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/11/Perfect-Strangers_4fe86164ae.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/11/anass_ddaaee22fe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/11/git_65e05d242e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/11/the-dark-knight_12d0503659.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/11/the-dark-knight_8706b940c5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/11/the-dark-knight_b135fe4add.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/3ff2a021630bf1aad92ce004f160489f_2764b12978.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Akhannouch_c386c11b98.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Bmwx4-2_af5e4a94e8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Bmwx4-2_b7ac7b94f0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Bmwx4-3_97a6567710.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Bmwx4-4_b28d442067.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Bmwx4_443d14c57a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Dell2_e6006a5009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Dell3_f772c1389a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Dell4_f88fce8c15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Dell_f7b5b68a9d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Etui-LED2_46ebdc0797.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Etui-LED_ee5c5a40fe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Gon_cries_-_131_d8ef87a2fc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/Good-Will-Hunting_72419645f9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/NM-Cherry-Blossom_081607ae45.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/chemise2_8e898f4496.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/chemise3_87cd53c25e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/chemise4_1c2c447a15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/chemise4_4bff46afa7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/chemise5_2b50359ea5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/chemise5_e31886db3a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/chemise6_277e802ffe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/chemise_e8b895239e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/cherry-blossom_12b2b9b5ee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/cherry-blossom_5e030ddf22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/greater_51b726db21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/iPhone-X2_606d1ac018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/iPhone-X2_85eb56e375.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/iPhone-X_218cc98f97.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/iPhone-X_62b910a1df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/kits1_4f29340154.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/kits_7c5b996c8f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/macbook2_7388ace101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/macbook3_dd9cb690f2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/macbook_152c1462bd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/macbook_a4e4ff58a9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/macbook_e55cabd0b0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/maxresdefault_54255956c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/miracles-from-heaven_92be5076be.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/santa-fe2_cc45d10780.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/santa-fe3_dd4ec1aa54.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/santa-fe4_c2d8fbb6cc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/santa-fe_210a40ed9e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/ss_2015-03-19_at_08.34.40_5d5a2fc012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/ss_2015-03-19_at_08.34.40_65931dd3d7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/12/thumb-1920-607718_1cf62084ca.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/17766123_c4ceeaaa43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/AKG2_3a6b41e3d9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/AKG_3875b2873c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/Akhannouch_cfa33bbb20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/Batterie-S9_7253bf7dc7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/Batterie-X_711a4cce80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/Capture_4c16784230.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/Capture_b341df76be.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/Capture_cd85fbd7cd.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/DeX-Pad2_965f1c580f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/DeX-Pad_a57c95e6f7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/DeX-Pad_d9b5927eeb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/NM-Cherry-Blossom_80323a8ab6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/NM-Cherry-Blossom_85b83b5acb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/S92_7d9c0046ab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/S9_4c849010fb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/S9_ef19ef558c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/center_0459a22740.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/center_259e5e8e24.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/center_34c36b5183.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/center_46ad488062.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/center_7d0297308c.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/center_7f30134157.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/center_8057934115.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/center_861791a37d.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/center_9d16bc2a74.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/chargeur-1_9ad6f6ded7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/chargeur-1_bb6c91779d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/chargeur-3_a6fd94905a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/chargeur_3c1efc4a8a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/chargeur_883204bff4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/cherry-blossom_a96fe340af.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/cherry-blossom_c401456a7d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/galaxy-Tab-3_c106a11c27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/git_15d755c564.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/git_1d0ad6dc25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/git_d3a92b77eb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/maxresdefault_5a29c45b05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/maxresdefault_d58b106b79.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/samsung-galaxy-s9-2_e93a587a8e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/samsung-galaxy-s9-2_e975f5cec7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/samsung-galaxy-s9_156daad118.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/samsung-galaxy-s9_5db86625c5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/13/samsung-galaxy-s9_dab081f838.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/14/El-Otmani-Akhannouch_6bc3703bf6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/14/maxresdefault_3ff70231a3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/14/maxresdefault_99b1268d59.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/14/maxresdefault_e167140487.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/15/Cover-lboulevard_1fb7b16917.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/15/Cover-lboulevard_2eefe0b18a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/15/Cover-lboulevard_4b0c416921.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/15/Cover-lboulevard_64fd6c6d00.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/15/Cover-lboulevard_8b5196af7f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/15/Cover-lboulevard_9036473658.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/15/Cover-lboulevard_96b1591f32.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/2018/05/15/saad_eddine_othmani_pjd-8_e6451d49d9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/NoImageBran.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/journal/uploads/images/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/categories.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/maxresdefault-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/maxresdefault-14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/images/maxresdefault-18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/journal/uploads/images/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/journal/uploads/images/profileicon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/photos/Good_Will_Hunting.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/slides/2018/05/04/slide-1_d9bd3ba1ce_6e1d904bee_b9bc110802.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/slides/2018/05/04/slide-2_9966b42e6e_6a557aee6f_492473fd61.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/slides/2018/05/04/slide-3_2e12fa09ed_b5ceda687b_fb36068f71.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/slides/2018/05/04/slide-4_f7254a9f81_92d16f4b3f_0c2a189938.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/000_1429wb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/090418-facebook-cambridge-m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/30738729_1665409056839433_4150671732182614016_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/60.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/61.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/62.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/6adb6ebbb0d48a2be94f227f85c48cbff7481d15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/8549213a769d2900c2bc075f46a948a7699a3048.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/943a1fc069992a743d8d9caa9b36decf90bc1178.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/_100341863_gettyimages-916050890.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/_100972004_gettyimages-842418008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/airbnb-1084x52900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/banque_mondiale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/bc22cf0e6708c1c07f8f09545250eec7204b2b84.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/bmce.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/casablanca_twin_center_morocco_ricardo_bofill_taller_arquitectura_03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/cerf_volant_palestine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/corruption.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/crop.php.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/crop.php_q2bkDrw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/cyberattack-170418.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/dims.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/facebook-nouveaux-parametres.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/football-tirage-demi-finales-c1-ligue-champions-bayern-real-madrid-liverpool-roma.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/imam_salafiste_marseille.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/lifestyle4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/lifestyle5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/lifestyle6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/lifestyle7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/lifestyle8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/main1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/main2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/main3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/main_kissoro_masseka.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/manchester_city.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/maxresdefault.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/migrants-algerie_1.jpg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/moisson-champ-16-2016-gace-france_0_1398_931.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/mugabe-grace.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/nintchdbpict000289110538.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/noueuse.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/ob_4b94cb_32862592853-4575c58f25-o.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/photos-usine-tanger_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/pierre-broissand-amomentofstillness2-hd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/policiers_arabie_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/psg_20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/rsz_000_m93le.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/siam_2018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/strikes_france_sncf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/subsahariens-agresses.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/ue__0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/verne-troyer-austin-powers-actor-dead-at-49.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/uploads/uploads/images/vieille_bombe_allemagne.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/stage/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stage/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/total.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/update.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -492,47 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="journalist_signals.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist_signals.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/journal/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="1231" column="44" selection-start-line="1231" selection-start-column="44" selection-end-line="1231" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="journalist-profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist-profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="journalist_videos.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist_videos.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -540,14 +25,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/journal/static/journal/css/style.css" />
         <option value="$PROJECT_DIR$/journal/static/journal/js/journalist/article_create.js" />
         <option value="$PROJECT_DIR$/journal/forms.py" />
-        <option value="$PROJECT_DIR$/journal/templates/journal/index.html" />
         <option value="$PROJECT_DIR$/journal/urls.py" />
         <option value="$PROJECT_DIR$/journal/templates/base.html" />
         <option value="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist-articles.css" />
-        <option value="$PROJECT_DIR$/journal/templates/journal/post.html" />
         <option value="$PROJECT_DIR$/stage/settings.py" />
         <option value="$PROJECT_DIR$/stage/urls.py" />
         <option value="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist_create_article.css" />
@@ -561,8 +43,11 @@
         <option value="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_update_article.html" />
         <option value="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_update_video.html" />
         <option value="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_videos.html" />
-        <option value="$PROJECT_DIR$/journal/views.py" />
         <option value="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_signals.html" />
+        <option value="$PROJECT_DIR$/journal/templates/journal/index.html" />
+        <option value="$PROJECT_DIR$/journal/views.py" />
+        <option value="$PROJECT_DIR$/journal/templates/journal/post.html" />
+        <option value="$PROJECT_DIR$/journal/static/journal/css/style.css" />
       </list>
     </option>
   </component>
@@ -575,7 +60,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-35" />
     <option name="y" value="251" />
     <option name="width" value="1328" />
@@ -593,84 +78,6 @@
             <path>
               <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
               <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="journalist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="journalist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="journal" type="462c0819:PsiDirectoryNode" />
-              <item name="journalist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
-              <item name="stage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -735,7 +142,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -811,30 +217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="223" column="31" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/journal/static/journal/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="737" column="19" selection-start-line="737" selection-start-column="19" selection-end-line="737" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/journal/templates/journal/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="70" column="47" lean-forward="true" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/journal/static/journal/js/journalist/article_create.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -848,16 +230,6 @@
           <caret line="36" column="85" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/journal/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -905,16 +277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal/templates/journal/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="300" column="42" selection-start-line="300" selection-start-column="42" selection-end-line="300" selection-end-column="42" />
-          <folding>
-            <element signature="e#17708#17734#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/journal/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -946,13 +308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist-profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist_update_article.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -967,13 +322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist_videos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist_add_article.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -981,20 +329,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist_signals.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist-profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist_videos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal/templates/journal/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="44" selection-end-column="26" />
+          <folding>
+            <element signature="e#97#1578#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal/templates/journal/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal/static/journal/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="208" column="11" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/journal/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="1231" column="44" selection-start-line="1231" selection-start-column="44" selection-end-line="1231" selection-end-column="44" />
+        <state relative-caret-position="3485">
+          <caret line="205" column="36" selection-start-line="205" selection-start-column="36" selection-end-line="205" selection-end-column="36" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist_signals.html">
+    <entry file="file://$PROJECT_DIR$/journal/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+        <state relative-caret-position="285">
+          <caret line="223" column="31" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
