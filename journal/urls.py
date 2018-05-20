@@ -52,6 +52,10 @@ urlpatterns = [
     path('journalist/delete_image_update/<int:article_id>/<int:image_id>/', views.journalist_delete_image_update,
          name="journalist_delete_image_update"),
 
+    # ADMIN URL
+    path('admin/', views.admin_approve, name='admin_approve'),
+    path('admin/approve/', views.admin_approve_article, name='admin_approve_article'),
+
     # CATEGORY AND SHOW ARTICLE
     path('<slug:category_name>/<int:post>/', views.article_show, name='post'),
     path('<slug:category_name>/', views.category, name='category'),

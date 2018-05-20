@@ -61,12 +61,15 @@
                                 <span>{{ weather.city }}</span>
                             </li>-->
                             <li><span id="currentDate"></span></li>
+                            {% if request.user.is_superuser %}
+                                <li><a id="admin-space" href="{% url 'admin_approve' %}">Espace Administrateur</a></li>
+                            {% endif %}
                             {% if is_journalist %}
                                 <li><a id="journalist-space" href="{% url 'journalist' %}">Espace Journalistes</a></li>
                             {% endif %}
-							<li><a href="{% url 'about' %}">à propos</a></li>
-							<li><a href="{% url 'contact' %}">Contact</a></li>
-							<li><a href="{% url 'privacy' %}">Privacy</a></li>
+							<li><a id="about-base-link" href="{% url 'about' %}">à propos</a></li>
+							<li><a id="contact-base-link" href="{% url 'contact' %}">Contact</a></li>
+							<li><a id="privacy-base-link" href="{% url 'privacy' %}">Privacy</a></li>
 						</ul>
 					</div>
 					<div class="header-social">
@@ -312,6 +315,7 @@
         {% endblock %}
 		<script src="{% static 'journal/js/bootstrap.min.js' %}"></script>
 		<script src="{% static 'journal/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'journal/js/jquery-scrolltofixed-min.js' %}"></script>
 		<script src="{% static 'journal/js/main.js' %}"></script>
         <script src="{% static 'js/nav.js' %}"></script>
 

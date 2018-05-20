@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% load static %}
+
+{% block title %}
+    À Propos
+{% endblock %}
+
+{% block content %}
+
+    <!-- SECTION INFO -->
+    <div class="section category-info">
+        <div class="container">
+            <!-- breadcrumb -->
+            <ul class="article-breadcrumb">
+                <li><a href="{% url 'index' %}">Accueil</a></li>
+                <li><a href="{% url 'about' %}">À Propos</a></li>
+            </ul>
+            <!-- /breadcrumb -->
+            <!-- Title -->
+            <div class="title">
+                <h2>À Propos</h2>
+            </div>
+            <!-- /Title -->
+        </div>
+    </div>
+    <!-- /SECTION INFO -->
+
+{% endblock %}

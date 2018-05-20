@@ -1,6 +1,7 @@
 from django import forms
 from .models import Image, ImageNews
 
+from captcha.fields import ReCaptchaField
 from ckeditor.widgets import CKEditorWidget
 
 
@@ -341,4 +342,50 @@ class JournalistAddTagForm(forms.Form):
                 'placeholder': 'Description du Tag (non requis)'
             }
         )
+    )
+
+
+class ContactForm(forms.Form):
+    name = forms.CharField(
+        max_length=255,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': 'Nom Complet'
+            }
+        )
+    )
+
+    email = forms.EmailField(
+        widget=forms.EmailInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': 'Email'
+            }
+        )
+    )
+
+    website = forms.URLField(
+        required=False,
+        widget=forms.URLInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': 'Website'
+            }
+        )
+    )
+
+    message = forms.CharField(
+        widget=forms.Textarea(
+            attrs={
+                'rows': '5',
+                'class': 'form-control',
+                'placeholder': 'Message'
+            }
+        )
+    )
+
+    captcha = ReCaptchaField(
+        public_key='6Le6VFoUAAAAAAavNsXOmqwQGhrzP9fBORD70McJ',
+        private_key='6Le6VFoUAAAAAEToKNwZCgaz_56ITAj1sDWec1Ij'
     )

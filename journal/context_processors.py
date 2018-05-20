@@ -15,15 +15,17 @@ def global_var(request):
     # }
 
     # TOP_READ
-    video_id = Video.objects.filter(active=True).values_list('id', flat=True)
-    top_read = News.objects.filter(active=True).exclude(id__in=video_id).order_by('-view_number', 'id')[:7]
+    video_id = Video.objects.filter(active=True, approved=True).values_list('id', flat=True)
+    top_read = News.objects.filter(active=True, approved=True).exclude(id__in=video_id).order_by('-view_number', 'id')[:7]
 
     # TOP COMMENTS
     top_comment = Comment.objects.all().order_by('-number_like', '-date_publication')[:4]
 
+    # LAST ADDED ARTICLE FOR 404 PAGE
+    last_article = News.objects.all().exclude(id__in=video_id).filter(active=True, approved=True).order_by('-id')[:6]
+
     # IS JOURNALIST
     check = False
-
     if request.user.is_authenticated:
         user = request.user
         if user.email in Journalist.email_list():
@@ -35,7 +37,8 @@ def global_var(request):
         'topRead': top_read,
         'topComment': top_comment,
         'newsletterForm': NewsletterForm(),
-        'is_journalist': check
+        'is_journalist': check,
+        'last_article': last_article
     }
 
     return context

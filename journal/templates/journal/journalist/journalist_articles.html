@@ -21,9 +21,6 @@
             form.off('submit').submit();
         }
     });
-    {% if created == '1' %}
-        $("tbody tr:first-child").css("background-color", "#AED581");
-    {% endif %}
 
 {% endblock %}
 
@@ -90,14 +87,14 @@
                         <div class="alert alert-success alert-dismissible" role="alert" style="margin: 15px">
                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                  <span aria-hidden="true">&times;</span></button>
-                                Article Créé avec succès
+                               Article Créé avec succès, veuillez attendre l'approbation d'un administrateur pour qu'il soit publié
                          </div>
                     {% endif %}
                     {% if updated == '1' %}
                         <div class="alert alert-success alert-dismissible" role="alert" style="margin: 15px">
                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                  <span aria-hidden="true">&times;</span></button>
-                                Article Modifié avec succès
+                                Article Modifié avec succès, veuillez attendre l'approbation d'un administrateur pour qu'il soit publié
                          </div>
                     {% endif %}
                     <thead>

@@ -89,4 +89,3 @@ success_hide();
 danger_hide();
 
 $(".django-ckeditor-widget").css('display', 'block');
-$("#cke_id_content").css('width', '100% !important');

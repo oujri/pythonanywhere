@@ -9,11 +9,11 @@
         <div class="container">
             <div class="col-md-2">
                 <div class="title">
-                    Trending Now
+                    EN CE MOMENT
                 </div>
             </div>
             <div class="col-md-10">
-                <div id="carousel-trending" class="carousel slide" data-ride="carousel">
+                <div id="carousel-trending" class="carousel slide" data-ride="carousel" data-interval="2000">
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         {% for article in trending_now %}
@@ -72,7 +72,7 @@
 		<!-- /Owl Carousel 1 -->
 
 		<!-- SECTION TRENDING -->
-		<div class="section tendance">
+		<div class="section tendance" id="tendance-id">
 			<!-- CONTAINER -->
 			<div class="container">
 				<!-- ROW -->
@@ -362,7 +362,7 @@
 					<div class="col-md-8">
 						<!-- row -->
 						<div class="row">
-							<!-- Column Internationnal -->
+							<!-- Column 1 -->
 							<div class="col-md-6 col-sm-6">
 								<!-- section title -->
 								<div class="section-title">
@@ -419,7 +419,8 @@
 								<!-- /ARTICLES -->
 							<!-- /Column Internationnal -->
                             </div>
-							<!-- Column Economie -->
+                            <!-- /Column 1 -->
+							<!-- Column 2 -->
 							<div class="col-md-6 col-sm-6">
 								<!-- section title -->
 								<div class="section-title">
@@ -473,11 +474,11 @@
                                 {% endfor %}
 								<!-- /ARTICLES -->
 							</div>
-							<!-- /Column Economie -->
+							<!-- /Column 2 -->
 						</div>
 						<!-- /row -->
 
-                        <!-- Section News -->
+                        <!-- Section 3 -->
                         <div class="row section-news">
 							<!-- section title -->
 							<div class="col-md-12">
@@ -485,74 +486,74 @@
 									<h2 class="title">Grand Projet</h2>
 								</div>
 							</div>
-                        {% for n in lastNews %}
-                            {% if forloop.counter == 3 %}
-                                <div class="row">
-                            {% endif %}
+                            {% for n in lastNews %}
+                                {% if forloop.counter == 3 %}
+                                    <div class="row">
+                                {% endif %}
 
-                            {% if forloop.counter < 3 %}
-                                <!-- Column  -->
-							    <div class="col-md-6 col-sm-6">
-								<!-- ARTICLE -->
-								<article class="article">
-									<div class="article-img">
-										<a href="{% url 'post' n.category.name n.id %}">
-											<img src="{{ n.primary_image.image.url }}" alt="{{ n.primary_image.description }}">
-										</a>
-										<ul class="article-info">
-											<li class="article-type"><i class="fa fa-file-text"></i></li>
-										</ul>
-									</div>
-									<div class="article-body">
-										<h3 class="article-title"><a href="{% url 'post' n.category.name n.id %}">{{ n.small_title }}</a></h3>
-										<ul class="article-meta">
-											<li><i class="fa fa-clock-o"></i> {{ n.date_publication }}</li>
-											<li><i class="fa fa-comments"></i> {{ n.comment_set.count }}</li>
-										</ul>
-										<p>{{ n.resume }}</p>
-									</div>
-								</article>
-								<!-- /ARTICLE -->
-							    </div>
-							    <!-- /Column  -->
-                            {% else %}
-                                <!-- Column  -->
-							    <div class="col-md-4 col-sm-4">
-                                    <!-- ARTICLE -->
-                                    <article class="article">
-                                        <div class="article-img">
-                                            <a href="{% url 'post' n.category.name n.id %}">
-                                                <img src="{{ n.primary_image.image_thumbnail.url }}" alt="{{ n.primary_image.description }}">
-                                            </a>
-                                            <ul class="article-info">
-                                                <li class="article-type"><i class="fa fa-file-text"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="article-body">
-                                            <h4 class="article-title"><a href="{% url 'post' n.category.name n.id %}">
-                                                {{ n.small_title }}</a></h4>
-                                            <ul class="article-meta">
-                                                <li><i class="fa fa-clock-o"></i> {{ n.date_publication }}</li>
-                                                <li><i class="fa fa-comments"></i> {{ n.comment_set.count }}</li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                    <!-- /ARTICLE -->
-							    </div>
-							    <!-- /Column  -->
-                            {% endif %}
+                                {% if forloop.counter < 3 %}
+                                    <!-- Column  -->
+							        <div class="col-md-6 col-sm-6">
+								        <!-- ARTICLE -->
+								        <article class="article">
+									        <div class="article-img">
+										        <a href="{% url 'post' n.category.name n.id %}">
+                                                    <img src="{{ n.primary_image.image.url }}" alt="{{ n.primary_image.description }}">
+										        </a>
+										        <ul class="article-info">
+											        <li class="article-type"><i class="fa fa-file-text"></i></li>
+										        </ul>
+									        </div>
+									        <div class="article-body">
+										        <h3 class="article-title"><a href="{% url 'post' n.category.name n.id %}">{{ n.small_title }}</a></h3>
+                                                <ul class="article-meta">
+											        <li><i class="fa fa-clock-o"></i> {{ n.date_publication }}</li>
+											        <li><i class="fa fa-comments"></i> {{ n.comment_set.count }}</li>
+										        </ul>
+										        <p>{{ n.resume }}</p>
+									        </div>
+								        </article>
+								        <!-- /ARTICLE -->
+							        </div>
+							        <!-- /Column  -->
+                                {% else %}
+                                    <!-- Column  -->
+							        <div class="col-md-4 col-sm-4">
+                                        <!-- ARTICLE -->
+                                        <article class="article">
+                                            <div class="article-img">
+                                                <a href="{% url 'post' n.category.name n.id %}">
+                                                    <img src="{{ n.primary_image.image_thumbnail.url }}" alt="{{ n.primary_image.description }}">
+                                                </a>
+                                                <ul class="article-info">
+                                                    <li class="article-type"><i class="fa fa-file-text"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="article-body">
+                                                <h4 class="article-title"><a href="{% url 'post' n.category.name n.id %}">
+                                                    {{ n.small_title }}</a></h4>
+                                                <ul class="article-meta">
+                                                    <li><i class="fa fa-clock-o"></i> {{ n.date_publication }}</li>
+                                                    <li><i class="fa fa-comments"></i> {{ n.comment_set.count }}</li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <!-- /ARTICLE -->
+							        </div>
+							        <!-- /Column  -->
+                                {% endif %}
 
-                            {% if forloop.counter == 2 or forloop.last %}
-                                </div>
-                            {% endif %}
+                                {% if forloop.counter == 2 or forloop.last %}
+                                    </div>
+                                {% endif %}
 
-                        {% endfor %}
-					</div>
-                        <!-- /Section News -->
+                            {% endfor %}
+					    </div>
+                        <!-- /Section 3 -->
 					<!-- /Main Column -->
 
 					<!-- Aside Column -->
-					<div class="col-md-4">
+					<div class="col-md-4" id="aside1">
 						{% include 'journal/includes/aside.html' %}
 					</div>
 					<!-- /Aside Column -->
@@ -565,7 +566,7 @@
 		<!-- /SECTION LAST ADD -->
 
 		<!-- AD SECTION -->
-		<div class="visible-lg visible-md" style="margin-top: -20px;">
+		<div class="visible-lg visible-md" id="middle-ad" style="margin-top: -20px;">
 			<img class="center-block" src="{% static 'journal/img/ad-3.jpg' %}" alt="">
 		</div>
 		<!-- /AD SECTION -->
@@ -756,4 +757,14 @@
 {% endblock %}
 
 {% block script %}
+    $(document).ready(function() {
+        $('#aside1').scrollToFixed({
+            marginTop: $('#nav-header').outerHeight() + 20,
+            limit: function() {
+                var limit = $('#middle-ad').offset().top - $('#aside1').outerHeight(true) - 30;
+                return limit;
+            },
+            zIndex: 1
+        });
+    });
 {% endblock %}

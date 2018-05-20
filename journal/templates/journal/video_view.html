@@ -12,9 +12,20 @@
 
 {% block script %}
     $("#navvideo").addClass("active");
+    $(document).ready(function() {
+        $('#aside').scrollToFixed({
+            marginTop: $('#nav-header').outerHeight() + 10,
+            limit: function() {
+                var limit = $('#footer').offset().top - $('#aside').outerHeight(true) - 10;
+                return limit;
+            },
+            zIndex: 1
+        });
+    });
 {% endblock %}
 
 {% block content %}
+    <div id="one">
     <div class="section video">
         <div class="container">
             <ul class="article-breadcrumb">
@@ -94,6 +105,7 @@
                 {% endfor %}
             </div>
         </div>
+    </div>
     </div>
     {% if video.content != "null" %}
     <div class="section contenu">
@@ -282,7 +294,21 @@
 						<!-- /reply form -->
                 {% endif %}
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" id="aside">
+                    <!-- subscribe widget -->
+                    <div class="widget subscribe-widget">
+                        <div class="widget-title">
+                            <h2 class="title">S'abonner à la Newsletter</h2>
+                        </div>
+                        <form action="{% url 'subscribe' %}" method="POST" role="form" class="formSubscribe"
+                              data-validate-username-url="{% url 'subscribe' %}">
+                            {% csrf_token %}
+                            {{ newsletterForm.email }}
+                            <button class="input-btn" type="submit">S'inscrire</button>
+                        </form>
+                        <p class="messageNewslatter"></p>
+                    </div>
+                    <!-- /subscribe widget -->
                     <!-- widget dernières vidéos -->
                     <div class="widget">
                         <div class="widget-title">

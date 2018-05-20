@@ -113,6 +113,7 @@ class News(models.Model):
     primary_image = models.ForeignKey(Image, on_delete=models.CASCADE, null=True)
     tag = models.ManyToManyField(Tag)
     active = models.BooleanField(default=True)
+    approved = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
@@ -213,3 +214,10 @@ class CommentFilter(models.Model):
 
     class Meta:
         verbose_name_plural = 'CommentsFilter'
+
+
+class ContactMessage(models.Model):
+    email = models.EmailField()
+    name = models.CharField(max_length=155)
+    website = models.URLField(null=True, blank=True)
+    message = models.TextField()

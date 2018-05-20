@@ -15,6 +15,16 @@
 
 {% block script %}
     $("{{ navActive }}").addClass("active");
+    $(document).ready(function() {
+        $('#aside').scrollToFixed({
+            marginTop: $('.trendingNow').outerHeight() + 30,
+            limit: function() {
+                var limit = $('#middle-ad').offset().top - $('#aside').outerHeight(true) - 30;
+                return limit;
+            },
+            zIndex: 1
+        });
+    });
 {% endblock %}
 
 {% block content %}
@@ -315,7 +325,7 @@
 					<!-- /Main Column -->
 					
 					<!-- Aside Column -->
-					<div class="col-md-4">
+					<div class="col-md-4" id="aside">
 						{% include 'journal/includes/aside.html' %}
                     </div>
 						<!-- /article widget -->
@@ -329,7 +339,7 @@
 		<!-- /SECTION -->
 		
 		<!-- AD SECTION -->
-		<div class="visible-lg visible-md">
+		<div class="visible-lg visible-md" id="middle-ad">
 			<img style="margin-top: -20px;" class="center-block" src="{% static 'journal/img/ad-3.jpg' %}" alt="">
 		</div>
 		<!-- /AD SECTION -->
@@ -387,6 +397,6 @@
 			</div>
 			<!-- /CONTAINER -->
 		</div>
-		<!-- /SECTION -->
+		<!-- /SECTION MORE ARTICLE -->
 
 {% endblock %}
