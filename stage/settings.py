@@ -34,7 +34,6 @@ INSTALLED_APPS = [
     'journal',
     'imagekit',
     'main_app',
-    'ecommerce',
     'ckeditor',
     'widget_tweaks',
     'captcha',

@@ -13,7 +13,7 @@ from itertools import chain
 
 from .models import Category, Image, News, Video, Comment, Tag, Answer, Newsletter, \
     CommentFilter, Journalist, ImageNews, SignalComment, SignalAnswer, ContactMessage
-from .forms import ImageUploadForm, ReplyForm, SignalForm, JournalistProfileForm, JournalistAddTagForm, \
+from .forms import ReplyForm, SignalForm, JournalistProfileForm, JournalistAddTagForm, \
     JournalistImageUploadForm, JournalistImageImport, JournalistImagePrimaryImport, JournalistCreateArticle, \
     JournalistCreateVideo, ContactForm
 
@@ -128,7 +128,19 @@ def index(request):
 
 # ## ABOUT PAGE ## #
 def about(request):
-    return render(request, 'journal/about.html')
+    nbr_articles = News.objects.all().count()
+    nbr_comments = Comment.objects.all().count() + Answer.objects.all().count()
+    nbr_views = 0
+    for n in News.objects.all():
+        nbr_views += n.view_number
+
+    context = {
+        'nbr_articles': nbr_articles,
+        'nbr_comments': nbr_comments,
+        'nbr_views': nbr_views
+    }
+
+    return render(request, 'journal/about.html', context)
 
 
 # ## CONTACT PAGE ## #
@@ -166,21 +178,6 @@ def contact(request):
 # ## PRIVACY PAGE ## #
 def privacy(request):
     return render(request, 'journal/privacy.html')
-
-
-# ## IMAGE UPLOAD PAGE ## #
-def upload(request):
-    if request.method == 'POST':
-        form = ImageUploadForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return redirect('upload')
-    else:
-        form = ImageUploadForm
-    return render(request, 'temporary/imageUpload.html', {
-        'form': form,
-        'images': Image.objects.all()
-    })
 
 
 # ## SELECTED ARTICLE SHOW PAGE ## #

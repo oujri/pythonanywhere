@@ -5,12 +5,6 @@ from captcha.fields import ReCaptchaField
 from ckeditor.widgets import CKEditorWidget
 
 
-class ImageUploadForm(forms.ModelForm):
-    class Meta:
-        model = Image
-        fields = ('image', )
-
-
 class JournalistImageUploadForm(forms.Form):
     image = forms.ImageField(
         widget=forms.FileInput(

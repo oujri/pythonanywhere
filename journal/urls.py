@@ -8,7 +8,6 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('privacy/', views.privacy, name='privacy'),
-    path('upload/', views.upload, name='upload'),
     path('subscribe/', views.subscribe, name='subscribe'),
     path('comment/<int:post>/', views.comment, name='comment'),
     path('like/<int:selected_comment>/', views.like, name='like'),
