@@ -1,3 +1,4 @@
+import re
 from operator import attrgetter
 
 from django.http import JsonResponse, Http404
@@ -541,16 +542,33 @@ def subscribe(request):
 
 
 # ## COMMENT ARTICLE FUNCTION ## #
+def find_word(w):
+    return re.compile(r'\b({0})\b'.format(w), flags=re.IGNORECASE).search
+
+
 def comment(request, post):
     name = request.GET.get('name', None)
     email = request.GET.get('email', None)
     message = request.GET.get('message', None)
-    if email is None:
-        return redirect('index')
 
     comment_verify = True
+    if(name is None) or (name == ''):
+        comment_verify = False
+    if (email is None) or (email == ''):
+        comment_verify = False
+    if (message is None) or (message == ''):
+        comment_verify = False
+    if not comment_verify:
+        message = 'Veuillez entrer des données valides'
+        data = {
+            'message': message,
+            'accept': comment_verify
+        }
+        return JsonResponse(data)
+
     for c_filter in CommentFilter.objects.all():
-        if c_filter.word in str(message):
+        # if c_filter.word in str(message):
+        if find_word(c_filter)(str(message)):
             message = 'Commentaire inapproprié, veuillez vérifier les mots utilisés dans votre commentaire'
             comment_verify = False
             print(str(comment_verify))
