@@ -215,7 +215,7 @@
                                 </div>
 
                                 {% for n in topRead %}
-                                {% if forloop.counter < 5 %}
+                                {% if forloop.counter < 6 %}
                                     <!-- ARTICLE -->
                                     <article class="article widget-article">
                                         <div class="article-img">
@@ -243,20 +243,15 @@
 
 						<!-- Column 4 Meilleurs Commentaires -->
                         <div class="col-md-4">
-							<div class="widget tweets-widget">
+							<div class="widget tags-widget">
                                 <div class="widget-title">
-                                    <h2 class="title">Meilleurs Commentaires</h2>
+                                    <h2 class="title">Meilleurs Tags</h2>
                                 </div>
                                 <ul>
-                                    {% for c in topComment %}
-                                        <li class="tweet">
-                                            <i class="fa fa-comments"></i>
-                                            <div class="tweet-body">
-                                                <p>
-                                                    <span>{{ c.full_name }}</span>
-                                                    {{ c.message|truncatewords:10 }}
-                                                    <a href="{% url 'post' c.news.category.name c.news.id %}">{{ c.news.small_title }}</a></p>
-                                            </div>
+                                    {% for tag in top_tags %}
+                                        <li>
+                                            <a href="{% url 'tag' tag %}">{{ tag }}</a>
+                                            <span class="pull-right">{{ tag.news_count }}</span>
                                         </li>
                                     {% endfor %}
                                 </ul>

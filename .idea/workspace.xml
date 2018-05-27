@@ -2,40 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20d61313-2cba-4c4f-9f05-b08232737cfa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/context_processors.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/context_processors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/author.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/author.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/category.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/category.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/journalist/component.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/journalist/component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist-articles.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist-articles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist-profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist-profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist_create_article.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist_create_article.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/journalist/nav-journalist.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/journalist/nav-journalist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/search.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/static/journal/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/video-show.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/video-show.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/css/video.css" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/css/video.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/img/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/img/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/img/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/img/logo-alt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/static/journal/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/journal/static/journal/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/500.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/admin/admin_approve.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/admin/admin_approve.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/templates/journal/privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/templates/journal/privacy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/journal/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_app/static/css/main_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/static/css/main_style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,8 +19,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/journal/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="250" column="44" selection-start-line="250" selection-start-column="44" selection-end-line="250" selection-end-column="44" />
+            <state relative-caret-position="142">
+              <caret line="93" column="54" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -85,8 +55,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/journal/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="832" column="52" lean-forward="true" selection-start-line="832" selection-start-column="52" selection-end-line="832" selection-end-column="52" />
+            <state relative-caret-position="219">
+              <caret line="313" column="24" lean-forward="true" selection-start-line="313" selection-start-column="24" selection-end-line="313" selection-end-column="24" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -101,6 +71,18 @@
               <caret line="22" column="49" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="49" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context_processors.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/journal/context_processors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,11 +109,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/journal/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+            <state relative-caret-position="137">
+              <caret line="217" column="57" selection-start-line="217" selection-start-column="57" selection-end-line="217" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/journal/static/journal/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="1497" column="1" selection-start-line="1497" selection-start-column="1" selection-end-line="1497" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -178,7 +169,6 @@
         <option value="$PROJECT_DIR$/journal/templates/journal/journalist/journalist_videos.html" />
         <option value="$PROJECT_DIR$/stage/urls.py" />
         <option value="$PROJECT_DIR$/stage/settings.py" />
-        <option value="$PROJECT_DIR$/journal/context_processors.py" />
         <option value="$PROJECT_DIR$/journal/migrations/k.py" />
         <option value="$PROJECT_DIR$/journal/templates/journal/index.html" />
         <option value="$PROJECT_DIR$/journal/templates/journal/about.html" />
@@ -200,18 +190,19 @@
         <option value="$PROJECT_DIR$/journal/static/journal/css/journalist/journalist-profile.css" />
         <option value="$PROJECT_DIR$/journal/templates/journal/print_article.html" />
         <option value="$PROJECT_DIR$/journal/templates/journal/post.html" />
-        <option value="$PROJECT_DIR$/journal/static/journal/css/style.css" />
         <option value="$PROJECT_DIR$/main_app/static/css/main_style.css" />
         <option value="$USER_HOME$/Desktop/Treasuregram/main_app/urls.py" />
         <option value="$USER_HOME$/Desktop/Treasuregram/main_app/views.py" />
         <option value="$USER_HOME$/Desktop/Treasuregram/main_app/models.py" />
         <option value="$PROJECT_DIR$/journal/urls.py" />
-        <option value="$PROJECT_DIR$/journal/models.py" />
         <option value="$PROJECT_DIR$/journal/admin.py" />
         <option value="$PROJECT_DIR$/journal/forms.py" />
         <option value="$PROJECT_DIR$/journal/templates/journal/join_us.html" />
         <option value="$PROJECT_DIR$/journal/views.py" />
         <option value="$PROJECT_DIR$/journal/templates/base.html" />
+        <option value="$PROJECT_DIR$/journal/static/journal/css/style.css" />
+        <option value="$PROJECT_DIR$/journal/models.py" />
+        <option value="$PROJECT_DIR$/journal/context_processors.py" />
       </list>
     </option>
   </component>
@@ -224,7 +215,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="width" value="1328" />
     <option name="height" value="387" />
@@ -246,6 +237,27 @@
               <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
               <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
               <item name="journal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
+              <item name="journal" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
+              <item name="journal" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="journal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonanywhere" type="462c0819:PsiDirectoryNode" />
+              <item name="journal" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="journal" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pythonanywhere" type="b2602c69:ProjectViewProjectNode" />
@@ -341,7 +353,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -374,13 +386,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/journal/templates/journal/print_article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/journal/context_processors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -412,13 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stage/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
         </state>
       </provider>
     </entry>
@@ -640,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal/static/journal/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="760" column="18" selection-start-line="760" selection-start-column="18" selection-end-line="760" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/journal/templates/journal/journalist/journalist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -689,16 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal/context_processors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="47" column="22" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/journal/templates/journal/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -733,16 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="250" column="44" selection-start-line="250" selection-start-column="44" selection-end-line="250" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/journal/templates/journal/join_us.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -750,6 +721,23 @@
           <folding>
             <element signature="e#7050#10438#0#HTML" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stage/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#221#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stage/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
@@ -765,8 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/journal/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="832" column="52" lean-forward="true" selection-start-line="832" selection-start-column="52" selection-end-line="832" selection-end-column="52" />
+        <state relative-caret-position="219">
+          <caret line="313" column="24" lean-forward="true" selection-start-line="313" selection-start-column="24" selection-end-line="313" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -775,8 +763,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/journal/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        <state relative-caret-position="137">
+          <caret line="217" column="57" selection-start-line="217" selection-start-column="57" selection-end-line="217" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal/static/journal/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="1497" column="1" selection-start-line="1497" selection-start-column="1" selection-end-line="1497" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="93" column="54" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journal/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

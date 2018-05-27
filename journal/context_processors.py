@@ -1,4 +1,6 @@
-from journal.models import Category, Video, News, Comment, Journalist, Supervisor
+from django.db.models import Count
+
+from journal.models import Category, Video, News, Comment, Journalist, Supervisor, Tag
 from journal.forms import NewsletterForm
 # import requests
 
@@ -20,6 +22,9 @@ def global_var(request):
 
     # TOP COMMENTS
     top_comment = Comment.objects.all().order_by('-number_like', '-date_publication')[:4]
+
+    # TOP TAGS
+    top_tags = Tag.objects.all().annotate(count=Count('news')).order_by('-count', '-id')[:11]
 
     # LAST ADDED ARTICLE FOR 404 PAGE
     last_article = News.objects.all().exclude(id__in=video_id).filter(active=True, approved=True).order_by('-id')[:6]
@@ -43,6 +48,7 @@ def global_var(request):
         # 'weather': weather,
         'topRead': top_read,
         'topComment': top_comment,
+        'top_tags': top_tags,
         'newsletterForm': NewsletterForm(),
         'is_journalist': check,
         'is_supervisor': check_s,

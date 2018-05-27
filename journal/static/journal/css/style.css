@@ -1457,28 +1457,44 @@ footer .widget .widget-title .title{
 	text-align: left;
 	font-size: 25px;
 	color: #FFF;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
+}
+
+footer .widget-article h4 a {
+    line-height: 16px;
+    height: 32px;
+    overflow: hidden;
+    display: block;
 }
 
 footer .widget .article{
 	margin-bottom: 20px;
 }
 
+footer .article .article-meta {
+    margin-bottom: 10px;
+    margin-top: -8px;
+}
+
 footer .article .article-meta li{
-	color: #FFF;
-}
-
-footer .tweets-widget .tweet i{
-	background: #212121;
-}
-
-footer .tweets-widget .tweet .tweet-body span {
 	color: #FFF;
 }
 
 footer .messageNewslatter {
 	display: inline;
 	padding-left: 45px;
+}
+
+footer .tags-widget ul li {
+    font-size: 18px;
+    padding: 4px;
+    text-transform: capitalize;
+    font-weight: 700;
+	color: #FFF;
+}
+
+footer .tags-widget ul li span {
+    font-weight: 500;
 }
 
 /*------------------------------------*\
