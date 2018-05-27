@@ -121,17 +121,17 @@
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-    background-color: #ef233c;
-    border-color: #ef233c;
+    background-color: #f46320;
+    border-color: #f46320;
 }
 
 .pagination>li>a {
-    color: #ef233c;
+    color: #f46320;
 }
 
 .pagination>li>a:focus,
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-    color: #ef233c;
+    color: #f46320;
 }

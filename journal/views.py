@@ -12,11 +12,11 @@ from django.views.decorators.http import require_POST
 from datetime import timedelta, datetime
 from itertools import chain
 
-from .models import Category, Image, News, Video, Comment, Tag, Answer, Newsletter, \
-    CommentFilter, Journalist, ImageNews, SignalComment, SignalAnswer, ContactMessage
+from .models import Category, Image, News, Video, Comment, Tag, Answer, Newsletter, JoinMessage, \
+    CommentFilter, Journalist, ImageNews, SignalComment, SignalAnswer, ContactMessage, Supervisor
 from .forms import ReplyForm, SignalForm, JournalistProfileForm, JournalistAddTagForm, \
     JournalistImageUploadForm, JournalistImageImport, JournalistImagePrimaryImport, JournalistCreateArticle, \
-    JournalistCreateVideo, ContactForm
+    JournalistCreateVideo, ContactForm, JoinForm
 
 from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
 
@@ -160,6 +160,11 @@ def contact(request):
                 message=cd['message']
             )
             created = True
+        else:
+            contact_form.fields['email'].widget.attrs['hidden'] = 'true'
+            contact_form.fields['email'].widget.attrs['class'] = ''
+            contact_form.fields['name'].widget.attrs['hidden'] = 'true'
+            contact_form.fields['name'].widget.attrs['class'] = ''
 
     if request.user.is_authenticated:
         contact_form.fields['email'].widget.attrs['hidden'] = 'true'
@@ -199,7 +204,7 @@ def article_show(request, category_name, post):
         if not request.user.is_authenticated:
             raise Http404
         else:
-            if not request.user.is_superuser:
+            if not is_supervisor(request):
                 raise Http404
     article.add_view()
 
@@ -517,6 +522,66 @@ def search(request):
     }
 
     return render(request, 'journal/search.html', context)
+
+
+def article_print(request, article_id):
+    if article_id in Video.objects.all().values_list('id', flat=True):
+        return redirect('index')
+    article = get_object_or_404(News, id=article_id)
+    if article.active is False:
+        return redirect('index')
+    if not article.approved:
+        if not request.user.is_authenticated:
+            raise Http404
+        else:
+            if not is_supervisor(request):
+                raise Http404
+
+    return render(request, 'journal/print_article.html', {'article': article})
+
+
+def join_us(request):
+    form = JoinForm()
+    sended = False
+    if request.method == 'POST':
+        form = JoinForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            JoinMessage.objects.create(
+                email=cd['email'],
+                first_name=cd['first_name'],
+                last_name=cd['last_name'],
+                website=cd['website'],
+                message=cd['message']
+            )
+            sended = True
+        else:
+            form.fields['email'].widget.attrs['hidden'] = 'true'
+            form.fields['first_name'].widget.attrs['hidden'] = 'true'
+            form.fields['last_name'].widget.attrs['hidden'] = 'true'
+            form.fields['email'].widget.attrs['class'] = ''
+            form.fields['first_name'].widget.attrs['class'] = ''
+            form.fields['last_name'].widget.attrs['class'] = ''
+    else:
+        if request.user.is_authenticated:
+            user = request.user
+            form = JoinForm(initial={
+                'email': user.email,
+                'first_name': user.first_name,
+                'last_name': user.last_name
+            })
+            form.fields['email'].widget.attrs['hidden'] = 'true'
+            form.fields['first_name'].widget.attrs['hidden'] = 'true'
+            form.fields['last_name'].widget.attrs['hidden'] = 'true'
+            form.fields['email'].widget.attrs['class'] = ''
+            form.fields['first_name'].widget.attrs['class'] = ''
+            form.fields['last_name'].widget.attrs['class'] = ''
+
+    context = {
+        'form': form,
+        'sended': sended
+    }
+    return render(request, 'journal/join_us.html', context)
 
 
 #####################################################
@@ -1656,73 +1721,69 @@ def journalist_delete_comment(request, comment_id):
 
 
 #####################################################
-#                   ADMIN PAGE                      #
+#                 SUPERVISOR PAGE                   #
 #####################################################
 
-# ## ADMIN APPROVE ARTICLES PAGE ## #
+# ## SUPERVISOR APPROVE ARTICLES PAGE ## #
 def admin_approve(request):
-    # CHECK IF ADMIN
-    if request.user.is_authenticated:
-        if request.user.is_superuser:
+    if is_supervisor(request):
+        if request.method == 'POST':
+            article_id = request.POST['article']
+            article = get_object_or_404(News, id=article_id)
+            article.active = False
+            article.save()
 
-            if request.method == 'POST':
-                article_id = request.POST['article']
-                article = get_object_or_404(News, id=article_id)
-                article.active = False
-                article.save()
+        video_id = Video.objects.all().values_list('id', flat=True)
+        news = News.objects.filter(active=True, approved=False).exclude(id__in=video_id).annotate(
+            type=Value('news', CharField()))
+        videos_ = Video.objects.filter(active=True, approved=False).annotate(type=Value('video', CharField()))
+        articles = sorted(
+            chain(news, videos_),
+            key=attrgetter('id'))
 
-            video_id = Video.objects.all().values_list('id', flat=True)
-            news = News.objects.filter(active=True, approved=False).exclude(id__in=video_id).annotate(
-                type=Value('news', CharField()))
-            videos_ = Video.objects.filter(active=True, approved=False).annotate(type=Value('video', CharField()))
-            articles = sorted(
-                chain(news, videos_),
-                key=attrgetter('id'))
+        # PAGINATOR
+        page = request.GET.get('page', 1)
+        paginator = Paginator(articles, 20)
+        try:
+            articles = paginator.page(page)
+        except PageNotAnInteger:
+            articles = paginator.page(1)
+        except EmptyPage:
+            articles = paginator.page(paginator.num_pages)
 
-            # PAGINATOR
-            page = request.GET.get('page', 1)
-            paginator = Paginator(articles, 20)
-            try:
-                articles = paginator.page(page)
-            except PageNotAnInteger:
-                articles = paginator.page(1)
-            except EmptyPage:
-                articles = paginator.page(paginator.num_pages)
+        context = {
+            'articles': articles,
+            'count_videos': videos_.count,
+            'count_articles': news.count
+        }
 
-            context = {
-                'articles': articles,
-                'count_videos': videos_.count,
-                'count_articles': news.count
-            }
-
-            return render(request, 'journal/admin/admin_approve.html', context)
+        return render(request, 'journal/admin/admin_approve.html', context)
 
     return redirect('index')
 
 
 #####################################################
-#             ADMIN AJAX REQUEST VIEW               #
+#           SUPERVISOR AJAX REQUEST VIEW            #
 #####################################################
 
-# ## ADMIN APPROVE ARTICLE FUNCTION ## #
+# ## SUPERVISOR APPROVE ARTICLE FUNCTION ## #
 def admin_approve_article(request):
-    # CHECK IF ADMIN
-    if request.user.is_authenticated:
-        if request.user.is_superuser:
-            article_id = request.GET.get('article', None)
-            article_type = request.GET.get('type', None)
-            if article_id is not None:
-                article = get_object_or_404(News, id=article_id)
-                article.approved = True
-                article.save()
-                if article_type == 'news':
-                    send_email(article_id)
-                data = {
-                    'message': 'success',
-                    'type': article_type,
-                    'tr': '#tr'+str(article_id)
-                }
-                return JsonResponse(data)
+    # CHECK IF SUPERVISOR
+    if is_supervisor(request):
+        article_id = request.GET.get('article', None)
+        article_type = request.GET.get('type', None)
+        if article_id is not None:
+            article = get_object_or_404(News, id=article_id)
+            article.approved = True
+            article.save()
+            if article_type == 'news':
+                send_email(article_id)
+            data = {
+                'message': 'success',
+                'type': article_type,
+                'tr': '#tr'+str(article_id)
+            }
+            return JsonResponse(data)
 
     data = {'message': 'failed'}
     return JsonResponse(data)
@@ -1731,6 +1792,16 @@ def admin_approve_article(request):
 #####################################################
 #                    FUNCTIONS                      #
 #####################################################
+
+# ## CHECK IF USER IS A SUPERVISOR ## #
+def is_supervisor(request):
+    check = False
+    if request.user.is_authenticated:
+        user = request.user
+        if user.email in Supervisor.email_list():
+            check = True
+    return check
+
 
 # ## SEND EMAIL TO NEWSLETTER SUBSCRIBERS ## #
 def send_email(id_article):

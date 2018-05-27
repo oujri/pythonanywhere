@@ -103,6 +103,7 @@
 									<li class="article-category"><a href="{% url 'category' article.category.name %}">
                                         {{ article.category.name }}</a></li>
 									<li class="article-type"><i class="fa fa-file-text"></i></li>
+                                    <li id="print_article"><a href="{% url 'print' article.id %}" target="_blank">imprimer</a></li>
                                     {% if self_article %}
                                         <li id="update_article"><a href="{% url 'journalist_update_article' article.id %}">
                                             Modifier l'article</a></li>

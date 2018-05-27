@@ -3,7 +3,7 @@
 Colors:
 	Body 		: #2C2C2C
 	Headers 	: #07090C
-	Primary 	: #EF233C
+	Primary 	: #f46320
 	Dark 		: #07090C #222
 	Grey 		: #DDD
 
@@ -51,7 +51,7 @@ a {
 
 a:hover,
 a:focus{
-	color: #EF233C;
+	color: #f46320;
     text-decoration: none;
     outline: none;
 }
@@ -81,7 +81,7 @@ textarea.input {
 	display: inline-block;
 	padding: 12px 30px;
 	color: #FFF;
-	background-color: #EF233C;
+	background-color: #f46320;
 	border: none;
 	text-transform: uppercase;
 	opacity: 1;
@@ -142,7 +142,7 @@ textarea.input {
 }
 
 .header-links ul li a:hover {
-	color:#EF233C;
+	color:#f46320;
 }
 
 .header-social {
@@ -222,7 +222,7 @@ textarea.input {
 }
 
 .trendingNow #carousel-trending .carousel-trending-a:hover {
-    background: #EF233C;
+    background: #f46320;
 	color: #FFF;
 }
 
@@ -316,12 +316,12 @@ textarea.input {
 }
 
 .main-nav li.active a {
-	border-bottom: 3px solid #EF233C;
+	border-bottom: 3px solid #f46320;
     background-color: #FFF;
 }
 
 .main-nav li a:hover, .main-nav li a:focus {
-	border-bottom: 3px solid #EF233C;
+	border-bottom: 3px solid #f46320;
     background-color: #FFF;
 }
 
@@ -343,7 +343,7 @@ textarea.input {
 }
 
 .button-nav .search-collapse-btn.active {
-	background: #EF233C;
+	background: #f46320;
 }
 
 .search-form {
@@ -352,7 +352,7 @@ textarea.input {
 	background: #07090c;
 	padding: 10px 20px;
 	right: 0;
-	border-top: 2px solid #EF233C;
+	border-top: 2px solid #f46320;
 	-webkit-box-shadow: 0px 5px 6px -5px rgba(0, 0, 0, 0.4);
 	        box-shadow: 0px 5px 6px -5px rgba(0, 0, 0, 0.4);
 	z-index: 22;
@@ -565,11 +565,11 @@ textarea.input {
 }
 
 .tab-nav li.active {
-	border-color:#EF233C;
+	border-color:#f46320;
 }
 
 .tab-nav li.active a {
-	background-color:#EF233C;
+	background-color:#f46320;
 	color:#FFF;
 }
 
@@ -581,7 +581,7 @@ textarea.input {
 	height: 0;
 	border-style: solid;
 	border-width: 20px 15px 0 15px;
-	border-color: #EF233C transparent transparent;
+	border-color: #f46320 transparent transparent;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	    -ms-transform: translateX(-50%);
@@ -701,7 +701,7 @@ textarea.input {
 	padding: 0px 15px;
 	height: 30px;
 	line-height: 30px;
-	background: #EF233C;
+	background: #f46320;
 	color: #FFF;
 	text-transform: uppercase;
 	font-size: 12.5px;
@@ -745,7 +745,7 @@ textarea.input {
 	margin-left:10px;
 }
 
-#update_article a {
+#update_article a, #print_article a  {
     background: #333;
     color: #FFF;
     padding: 0 15px;
@@ -757,7 +757,11 @@ textarea.input {
     margin-left: 15px;
 }
 
-#update_article a:hover {
+#update_article a {
+	margin-left: 0;
+}
+
+#update_article a:hover, #print_article a:hover {
 	opacity: 0.8;
 }
 
@@ -874,8 +878,8 @@ textarea.input {
 
 /*-- article pagination --*/
 .article-pagination {
-	margin-top:30px;
 	margin-bottom:30px;
+	margin-top: -20px;
 }
 
 .article-pagination ul li {
@@ -890,13 +894,13 @@ textarea.input {
 	font-size:12.5px;
 }
 .article-pagination ul li a:hover {
-	color:#EF233C;
-	border-color:#EF233C;
+	color:#f46320;
+	border-color:#f46320;
 }
 
 .article-pagination ul li.active a {
-	background-color:#EF233C;
-	border-color:#EF233C;
+	background-color:#f46320;
+	border-color:#f46320;
 	color:#FFF;
 }
 
@@ -1412,7 +1416,7 @@ textarea.input {
 }
 
 #footer a:hover {
-	color:#EF233C;
+	color:#f46320;
 }
 
 /*------------------------------------*\
@@ -1526,8 +1530,8 @@ footer .messageNewslatter {
 }
 
 .custom-owl-nav > div:not(.disabled):hover {
-	background-color:#EF233C;
-	border-color: #EF233C;
+	background-color:#f46320;
+	border-color: #f46320;
 	color:#FFF;
 }
 
@@ -1571,7 +1575,7 @@ footer .messageNewslatter {
 
 .owl-theme.center-owl-nav .owl-nav [class*='owl-']:hover {
     opacity: 0.8;
-    background: #EF233C;
+    background: #f46320;
 }
 
 /*------------------------------------*\
@@ -1583,10 +1587,10 @@ footer .messageNewslatter {
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #EF233C;
+    background: #f46320;
 }
 .owl-theme .owl-dots .owl-dot.active span {
-	background: #EF233C;
+	background: #f46320;
 }
 
 /*=========================================================
@@ -1669,7 +1673,7 @@ footer .messageNewslatter {
 }
 
 #back-to-top:hover {
-	background-color:#EF233C;
+	background-color:#f46320;
 }
 
 #back-to-top.active {

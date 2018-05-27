@@ -1,4 +1,4 @@
-from journal.models import Category, Video, News, Comment, Journalist
+from journal.models import Category, Video, News, Comment, Journalist, Supervisor
 from journal.forms import NewsletterForm
 # import requests
 
@@ -31,6 +31,13 @@ def global_var(request):
         if user.email in Journalist.email_list():
             check = True
 
+    # IS SUPERVISOR
+    check_s = False
+    if request.user.is_authenticated:
+        user = request.user
+        if user.email in Supervisor.email_list():
+            check_s = True
+
     context = {
         'categories': Category.objects.all().order_by('id'),
         # 'weather': weather,
@@ -38,6 +45,7 @@ def global_var(request):
         'topComment': top_comment,
         'newsletterForm': NewsletterForm(),
         'is_journalist': check,
+        'is_supervisor': check_s,
         'last_article': last_article
     }
 

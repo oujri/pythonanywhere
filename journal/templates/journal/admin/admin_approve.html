@@ -3,14 +3,14 @@
 {% load static %}
 
 {% block title %}
-    Administration
+    Supervision
 {% endblock %}
 
 {% block style %}
     <link rel="stylesheet" href="{% static 'journal/css/journalist/journalist-articles.css' %}">
     <style>
         #admin-space {
-            color: #EF233C;
+            color: #f46320;
         }
 
         .header-info h2 {
@@ -77,11 +77,11 @@
     <!-- SECTION HEADER -->
     <div class="section header-info">
         <div class="container">
-            <h2>Administration</h2>
+            <h2>Supervision</h2>
             <!-- breadcrumb -->
             <ul class="article-breadcrumb pull-right">
                 <li><a href="{% url 'index' %}">Accueil</a></li>
-                <li><a href="{% url 'admin_approve' %}">Espace Administrateurs</a></li>
+                <li><a href="{% url 'admin_approve' %}">Espace Superviseur</a></li>
             </ul>
             <!-- /breadcrumb -->
         </div>

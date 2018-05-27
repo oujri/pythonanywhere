@@ -22,7 +22,7 @@
 }
 
 .video .row .list-inline .publisher a:hover {
-    color: #EF233C;
+    color: #f46320;
 }
 
 a.tag:hover {
@@ -157,5 +157,5 @@ a.tag:hover {
 .more-author .article .article-meta li a:hover,
 .more-author .col-md-3 .article .article-info .article-type a:hover,
 .more-author .col-md-3 .article .article-info .article-type:hover {
-    color: #EF233C;
+    color: #f46320;
 }

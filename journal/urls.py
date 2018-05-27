@@ -19,6 +19,8 @@ urlpatterns = [
     path('video/<int:selected_video_id>/', views.video_show, name='video_show'),
     path('search/', views.search, name='search'),
     path('tag/<slug:tag_name>/', views.tag, name='tag'),
+    path('article/<int:article_id>/print/', views.article_print, name='print'),
+    path('join_us/', views.join_us, name='join_us'),
 
     # JOURNALIST URL
     path('journalist/', views.journalist, name='journalist'),
@@ -51,9 +53,9 @@ urlpatterns = [
     path('journalist/delete_image_update/<int:article_id>/<int:image_id>/', views.journalist_delete_image_update,
          name="journalist_delete_image_update"),
 
-    # ADMIN URL
-    path('admin/', views.admin_approve, name='admin_approve'),
-    path('admin/approve/', views.admin_approve_article, name='admin_approve_article'),
+    # SUPERVISOR URL
+    path('supervisor/', views.admin_approve, name='admin_approve'),
+    path('supervisor/approve/', views.admin_approve_article, name='admin_approve_article'),
 
     # CATEGORY AND SHOW ARTICLE
     path('<slug:category_name>/<int:post>/', views.article_show, name='post'),

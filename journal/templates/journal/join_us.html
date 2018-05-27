@@ -1,9 +1,9 @@
-﻿{% extends 'base.html' %}
+{% extends 'base.html' %}
 
 {% load static %}
 
 {% block title %}
-    Contact
+    Rejoignez nous
 {% endblock %}
 
 {% block script %}
@@ -71,7 +71,7 @@
     .alert-danger {
         font-size: 16px;
     }
-    #contact-base-link {
+    #join-base-link {
         color: #f46320;
     }
     </style>
@@ -85,12 +85,12 @@
             <!-- breadcrumb -->
             <ul class="article-breadcrumb">
                 <li><a href="{% url 'index' %}">Accueil</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'join_us' %}">rejoignez nous</a></li>
             </ul>
             <!-- /breadcrumb -->
             <!-- Title -->
             <div class="title">
-                <h2>Contact</h2>
+                <h2>Rejoignez nous</h2>
             </div>
             <!-- /Title -->
         </div>
@@ -99,11 +99,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 contact-description">
-                {% if created %}
+                {% if sended %}
                     <div class="alert alert-success alert-dismissible" role="alert" style="margin-bottom: 10px">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">
                             &times;</span></button>
-                        Message envoyé avec succès
+                        Votre demande est envoyé, nous allons vous répondre le plus tot possible
                     </div>
                 {% endif %}
                 {% if form.errors %}
@@ -157,19 +157,25 @@
                         </p>
                     </div>
                 </div>
-                {% if not created %}
+                {% if not sended %}
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title">
                                 <h2 class="title">
-                                    Envoyez-nous un message
+                                    Rejoignez nous
                                 </h2>
                             </div>
                             <form action="" method="post">
                                 {% csrf_token %}
-                                {{ form.media }}
                                 {{ form.email }}
-                                {{ form.name }}
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        {{ form.first_name }}
+                                    </div>
+                                    <div class="col-md-6">
+                                        {{ form.last_name }}
+                                    </div>
+                                </div>
                                 {{ form.website }}
                                 {{ form.message }}
                                 {{ form.captcha }}

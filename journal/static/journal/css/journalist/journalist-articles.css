@@ -82,7 +82,7 @@ h4 {
 }
 
 .table tbody tr td:nth-child(2) a {
-    color: #ef233c;
+    color: #f46320;
     transition: .3s all;
 }
 
@@ -129,19 +129,19 @@ h4 {
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-    background-color: #ef233c;
-    border-color: #ef233c;
+    background-color: #f46320;
+    border-color: #f46320;
 }
 
 .pagination>li>a {
-    color: #ef233c;
+    color: #f46320;
 }
 
 .pagination>li>a:focus,
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-    color: #ef233c;
+    color: #f46320;
 }
 
 
@@ -179,5 +179,5 @@ h4 {
 }
 
 .header div:last-child form input:last-child:hover {
-    background: #ef233c;
+    background: #f46320;
 }

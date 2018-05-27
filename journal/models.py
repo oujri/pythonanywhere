@@ -106,8 +106,8 @@ class News(models.Model):
     date_publication = models.DateTimeField(auto_now_add=True)
     view_number = models.IntegerField(default=0)
     resume = models.TextField(blank=True, null=True)
-    comment_enable = models.BooleanField(default=True)
-    share_enable = models.BooleanField(default=True)
+    comment_enable = models.BooleanField(default=True, verbose_name='comment')
+    share_enable = models.BooleanField(default=True, verbose_name='share')
     journalist = models.ForeignKey(Journalist, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, blank=True, null=True, on_delete=models.CASCADE)
     primary_image = models.ForeignKey(Image, on_delete=models.CASCADE, null=True)
@@ -126,7 +126,7 @@ class News(models.Model):
         return self.comment_set.all().order_by('-number_like')
 
     class Meta:
-        verbose_name_plural = 'News'
+        verbose_name_plural = 'Articles'
 
 
 class Video(News):
@@ -137,6 +137,9 @@ class Video(News):
 
 class ImageNews(Image):
     article = models.ForeignKey(News, on_delete=models.CASCADE, null=True, blank=True)
+
+    class Meta:
+        verbose_name_plural = 'Articles Images'
 
 
 class AbstractComment(models.Model):
@@ -220,4 +223,32 @@ class ContactMessage(models.Model):
     email = models.EmailField()
     name = models.CharField(max_length=155)
     website = models.URLField(null=True, blank=True)
+    date_send = models.DateTimeField(auto_now_add=True, null=True)
     message = models.TextField()
+    open = models.BooleanField(default=False)
+
+
+class Supervisor(models.Model):
+    email = models.EmailField()
+    active = models.BooleanField(default=True)
+    date_creation = models.DateTimeField(auto_now_add=True, null=True)
+
+    def __str__(self):
+        return self.email
+
+    @staticmethod
+    def email_list():
+        return Supervisor.objects.filter(active=True).values_list('email', flat=True)
+
+
+class JoinMessage(models.Model):
+    email = models.EmailField()
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    website = models.URLField(null=True, blank=True)
+    date_send = models.DateTimeField(auto_now_add=True)
+    message = models.TextField()
+    read = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.first_name.capitalize() + ' ' + self.last_name.upper()

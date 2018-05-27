@@ -383,3 +383,58 @@ class ContactForm(forms.Form):
         public_key='6Le6VFoUAAAAAAavNsXOmqwQGhrzP9fBORD70McJ',
         private_key='6Le6VFoUAAAAAEToKNwZCgaz_56ITAj1sDWec1Ij'
     )
+
+
+class JoinForm(forms.Form):
+    email = forms.EmailField(
+        widget=forms.EmailInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': 'Email'
+            }
+        )
+    )
+
+    first_name = forms.CharField(
+        max_length=50,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': 'Prénom'
+            }
+        )
+    )
+
+    last_name = forms.CharField(
+        max_length=50,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': 'Nom'
+            }
+        )
+    )
+
+    website = forms.URLField(
+        widget=forms.URLInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': 'Website (non requis)'
+            }
+        )
+    )
+
+    message = forms.CharField(
+        widget=forms.Textarea(
+            attrs={
+                'rows': '10',
+                'class': 'form-control',
+                'placeholder': 'Message de motivation'
+            }
+        )
+    )
+
+    captcha = ReCaptchaField(
+        public_key='6Le6VFoUAAAAAAavNsXOmqwQGhrzP9fBORD70McJ',
+        private_key='6Le6VFoUAAAAAEToKNwZCgaz_56ITAj1sDWec1Ij'
+    )

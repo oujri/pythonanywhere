@@ -61,8 +61,8 @@
                                 <span>{{ weather.city }}</span>
                             </li>-->
                             <li><span id="currentDate"></span></li>
-                            {% if request.user.is_superuser %}
-                                <li><a id="admin-space" href="{% url 'admin_approve' %}">Espace Administrateur</a></li>
+                            {% if is_supervisor %}
+                                <li><a id="admin-space" href="{% url 'admin_approve' %}">Espace Supreviseur</a></li>
                             {% endif %}
                             {% if is_journalist %}
                                 <li><a id="journalist-space" href="{% url 'journalist' %}">Espace Journalistes</a></li>
@@ -70,6 +70,9 @@
 							<li><a id="about-base-link" href="{% url 'about' %}">à propos</a></li>
 							<li><a id="contact-base-link" href="{% url 'contact' %}">Contact</a></li>
 							<li><a id="privacy-base-link" href="{% url 'privacy' %}">Privacy</a></li>
+                            {% if not is_journalist %}
+							    <li><a id="join-base-link" href="{% url 'join_us' %}">Rejoignez nous</a></li>
+                            {% endif %}
 						</ul>
 					</div>
 					<div class="header-social">
@@ -99,7 +102,9 @@
 			<div id="center-header">
 				<div class="container">
 					<div class="header-logo">
-						<a href="{% url 'index' %}" class="logo"><img style="width: 210px" src="{% static 'journal/img/logo.png' %}" alt=""></a>
+						<a href="{% url 'index' %}" class="logo">
+                            <img style="width: 273px; max-height: initial;" src="{% static 'journal/img/logo.png' %}" alt="">
+                        </a>
 					</div>
 					<div class="header-ads">
 						<img class="center-block" src="{% static 'journal/img/ad-2.jpg' %}" alt="">
@@ -159,7 +164,9 @@
 							<!-- footer about -->
 							<div class="footer-widget about-widget">
 								<div class="footer-logo">
-									<a href="#" class="logo" style="width: 175px"><img src="{% static 'journal/img/logo.png' %}" alt=""></a>
+									<a href="#" class="logo" style="width: 250px">
+                                        <img src="{% static 'journal/img/logo.png' %}" alt="logo">
+                                    </a>
 									<p>Populo tritani laboramus ex mei, no eum iuvaret ceteros euripidis, ne alia sadipscing mei. Te inciderint cotidieque pro, ei iisque docendi qui.</p>
 								</div>
 							</div>

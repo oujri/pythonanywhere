@@ -37,8 +37,8 @@
 
 .js-upload-primary_image {
     margin-top: 10px;
-    background-color: #ef233c;
-    border-color: #ef233c;
+    background-color: #f46320;
+    border-color: #f46320;
     transition: .3s all;
 }
 
@@ -49,7 +49,7 @@
 }
 
 #primary_image_url a {
-    color: #ef233c;
+    color: #f46320;
 }
 
 .form-group {
@@ -85,14 +85,14 @@
 }
 
 .ending-button .btn:last-child:hover, .js-upload-primary_image:hover {
-    color: #ef233c;
+    color: #f46320;
     background: #FFF;
 }
 
 .ending-button .btn:last-child {
     width: 79.7%;
-    background-color: #ef233c;
-    border-color: #ef233c;
+    background-color: #f46320;
+    border-color: #f46320;
     color: #FFF;
 }
 
@@ -119,7 +119,7 @@
     margin-top: -3px;
     padding: 0;
     background: transparent;
-    color: #ef233c;
+    color: #f46320;
     border: 0;
     transition: .3s all;
 }
@@ -130,7 +130,7 @@
 }
 
 #modal-submit {
-    background: #ef233c;
+    background: #f46320;
     color: #FFF;
 }
 
